@@ -1,0 +1,28 @@
+.navigation-bar {
+  background-color: aliceblue;
+  padding: 10px 20px;
+}
+
+.navigation-bar ul.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-bar nav {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation-bar .logo {
+  height: 40px;
+}
+
+.navigation-bar .logo img {
+  height: 100%;
+}
+
+.nav-list li {
+  font-weight: 600;
+}

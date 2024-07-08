@@ -1,0 +1,23 @@
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+:root {
+  font-family: "Inter";
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
