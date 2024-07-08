@@ -1,8 +1,23 @@
-# React + Vite
+# Team Hiti
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Working to learn more about Hiti (dhunge dharas) in Kathmandu Valley focusing mainly in Patan area.
 
-Currently, two official plugins are available:
+At Incubate Nepal 2024, they’ll document Patan’s complex relationship with water, from the sacred Bagmati River to urban floods. Through research, surveys, curatorial walks, interviews, and workshops, they’ll capture the historic and modern water challenges and solutions, culminating in an insightful exhibition.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##### Team Overview
+
+**Mentor:** Shubhi Goyal
+**Peer Mentor:** Risham Shah
+**Mentees:** 
+
+
+- Abiral Manandhar
+- Anshu Pradhan
+- Archana Pandey
+- Oshin Gautam 
+- Sonakshi Shrestha
+- Sulav Sapkota
+
+
+
+
