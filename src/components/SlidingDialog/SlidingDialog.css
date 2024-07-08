@@ -1,0 +1,24 @@
+.dialog {
+  position: fixed;
+  top: 0;
+  right: -40%;
+  width: 25%;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(214, 212, 212, 0.9);
+  overflow-y: auto;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.dialog.open {
+  right: 0;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
