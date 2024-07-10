@@ -1,17 +1,23 @@
 import React, { useEffect, useState } from "react";
-import KathmanduGeoJSON from "../../data/306_Kathmandu.json";
-import LalitpurGeoJSON from "../../data/308_Lalitpur.json";
-import BhaktapurGeoJSON from "../../data/307_Bhaktapur.json";
-import BagmatiGeoJSON from "../../data/3_Bagmati_province.json";
-import { GeoJSON, useMap, useMapEvent, Tooltip } from "react-leaflet";
+import KathmanduGeoJSON from "../../data/kathmandu_municipals.json";
+import LalitpurGeoJSON from "../../data/lalitpur_municipals.json";
+import BhaktapurGeoJSON from "../../data/bhaktapur_municipals.json";
+import BagmatiGeoJSON from "../../data/bagmati_districts.json";
+import proj4 from "proj4";
+import { featureEach } from "@turf/turf";
+import {
+  GeoJSON,
+  useMap,
+  TileLayer,
+  useMapEvent,
+  Tooltip,
+} from "react-leaflet";
 import {
   individualDistrict,
   individualMunicipal,
 } from "../../helpers/mapHelpers";
 
 const MapChild = () => {
-  const [filteredProvinceJSON, setFilteredProvinceJSON] = useState({});
-
   const [districtLoading, setDistrictLoading] = useState(true);
   const [currentDistrict, setCurrentDistrict] = useState([]);
   const [currentDistrictJSON, setCurrentDistrictJSON] = useState([]);
@@ -19,18 +25,6 @@ const MapChild = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    console.log(BagmatiGeoJSON);
-
-    //console.log(Object.values(BagmatiGeoJSON)[1]);
-    const districts = ["Kathmandu", "Bhaktapur", "Lalitpur"];
-    let districtFeature = BagmatiGeoJSON.features.filter((district, index) =>
-      districts.includes(district.properties.DISTRICT)
-    );
-
-    setFilteredProvinceJSON({
-      type: BagmatiGeoJSON.type,
-      features: districtFeature,
-    });
     setLoading(false);
   }, []);
 
@@ -66,7 +60,14 @@ const MapChild = () => {
       ) : (
         <GeoJSON
           onEachFeature={onEachDistrict}
-          data={filteredProvinceJSON.features}
+          data={BagmatiGeoJSON}
+          style={{
+            color: "#277FCA",
+            fillOpacity: 0.2,
+            radius: 8,
+            weight: 3,
+          }}
+          pointToLayer={() => null}
         />
       )}
 
@@ -74,8 +75,20 @@ const MapChild = () => {
         <GeoJSON
           onEachFeature={onEachMunicipal}
           data={currentDistrictJSON.features}
+          style={{
+            color: "#277FCA",
+            fillOpacity: 0.2,
+            radius: 8,
+            weight: 3,
+          }}
+          pointToLayer={() => null}
         />
       )}
+
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
       {/* <GeoJSON onEachFeature={onEachMunicipal} data={KathmanduGeoJSON} />
       <GeoJSON onEachFeature={onEachMunicipal} data={BhaktapurGeoJSON} />
       <GeoJSON onEachFeature={onEachMunicipal} data={LalitpurGeoJSON} /> */}

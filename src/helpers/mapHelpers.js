@@ -1,8 +1,6 @@
 export const individualMunicipal = (municipal, layer) => {
-  const municipalName = municipal.properties.LOCAL;
-  layer.setStyle({
-    fillColor: "yellow",
-  });
+  const municipalName = municipal.properties["name"];
+
   layer.on({
     mouseover: () => {},
   });
@@ -10,7 +8,7 @@ export const individualMunicipal = (municipal, layer) => {
   layer.bindTooltip(municipalName, {
     permanent: false,
     direction: "center",
-    className: "label",
+    className: "municipalLabel",
   });
 };
 
@@ -20,28 +18,23 @@ export const individualDistrict = (
   setCurrentDistrict,
   load
 ) => {
-  let currentDistrict = district.properties.DISTRICT;
-
+  let currentDistrict = district.properties["name:en"];
+  console.log(JSON.stringify(district), "di");
   let backgroundColor = "red";
   if (currentDistrict == "Lalitpur") {
     backgroundColor = "yellow";
   } else if (currentDistrict == "Bhaktapur") {
-    backgroundColor = "green";
+    backgroundColor = "orange";
   } else {
     backgroundColor = "purple";
   }
 
-  layer.bindTooltip(currentDistrict, {
-    permanent: true,
-    direction: "center",
-    className: "label",
-  });
-  layer.setStyle({
-    fillColor: backgroundColor,
-  });
+  layer.options.fillColor = backgroundColor;
+
   layer.on({
     mouseover: () => {
       console.log("bla bla");
+      console.log("first");
     },
     click: () => {
       console.log("blaaaa");
