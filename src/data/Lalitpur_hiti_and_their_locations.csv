@@ -1,0 +1,109 @@
+S.N,Latitude,Longitude,Existence,Location,Name
+1,27.676722,85.316555,Exist,Pulchowk,Pucha Hiti
+2,27.686083,85.306694,Exist,Sanepa,Sanepa Hiti
+3,27.691919,85.305608,Exist,Sanepa,Raj Tirtha Hiti
+4,27.669672,85.328146,Exist,Sundhara,Nuga Lu Hiti
+5,27.670552,85.320798,Exist,Saugal Tole,Sauga Hiti
+6,27.66924,85.326449,Exist,Thapa Tole,Thapa Hiti
+7,27.66754,85.327517,Exist,Kanibahal,Kanibahal Hiti
+8,27.66649,85.326291,Exist,Naricha Tole,Naricha Hiti
+9,27.668401,85.330343,Exist,Tyagal,Tyaga Hiti
+10,27.672988,85.332898,Exist,Balkumari,Magah Hiti
+11,27.672102,85.3357,Exist,Balkumari,Kwachhen Hiti
+12,27.671232,85.332343,Exist,Guita Tole,Guita hiti
+13,27.670816,85.330735,Exist,Subahal,Subaha Hiti
+14,27.681534,85.329165,Exist,Shankhamul,Shankhamul Hiti A
+15,27.679853,85.33053,Exist,Shankhamul,Shankhamul Hiit B
+16,27.678868,85.331219,Exist,Shankhamul,Shankhamul Hiti C
+17,27.678457,85.332861,Exist,Chyasal,Chyasal Hiti
+18,27.67442,85.328147,Exist,Kwoyalachhi,Narayan (Kwoyalachhi) Hiti
+19,27.674655,85.329353,Exist,Chyasal,Bya Hiti
+20,27.673601,85.331894,Exist,Bholdhoka,Bhola Hiti
+21,27.673145,85.332667,Exist,Bholu Tole,Bhola Khya Hiti
+22,27.674622,85.328205,Exist,Chyasal,Chyasa Hiti
+23,27.674205,85.327627,Exist,Bhindhyo Lachhi,Bhindhyo Lachhi Hiit
+24,27.672576,85.325424,Exist,Mangal Bazar,Bhandar Khal Hiti
+25,27.672733,85.32509,Exist,"Sundaro Chowk
+Mangal bazar",Tusha Hiti
+26,27.673648,85.325423,Exist,Mangal Bazar,Manga Hiti
+27,27.666637,85.323487,Exist,lagankhel,Lagankhya Hiti
+28,27.675973,85.324137,Exist,Nag Bahal,Elhane (Naga Bahal) Hiti
+29,27.665638,85.328536,Exist,Sincha Tole,Sincha Hiti
+30,27.663704,85.328522,Exist,Sincha Tole,Mani Mandap (Sukuma) Hiti
+31,27.67556,85.418938,Exist,Na Tole,Natwa Hiti
+32,27.67649,85.319217,Exist,Chhya Bahal Dhwaka,Chha Baha (Chhya) Hiti
+33,27.677292,85.323945,Exist,Nayea Tole,Tapa Hiti A
+34,27.677267,85.32391,Exist,Tapa Hity Tole,Tapa Hiti B
+35,27.678317,85.325688,Exist,"Alko, Ikhachhen",Alko Hiti
+36,27.67853,85.326212,Exist,Emukhel,Byanchha Hiti
+37,27.67853,85.326332,Exist,"Emukhel, Koye Khya",Dathu Hiti
+38,27.678328,85.326375,Exist,"Po Tole, Emukhel",Washa Hiti
+39,27.67772,85.326073,Exist,"Po Tole, Kumbheshwor",Amrit Hiti (Po Hiti)
+40,27.6768,85.325707,Exist,"Konti, Kumbheshwor",Konti Hiti
+41,27.676595,85.326132,Exist,"Konti, Kumbheshwor",Konti Pukhu Hiti
+,!(cid:21)(cid:17)(cid:6)(cid:17)(cid:3)(cid:27)(cid:9),!(cid:13)(cid:15)(cid:29)(cid:6)(cid:17)(cid:3)(cid:27)(cid:9),"""#(cid:6)(cid:7)(cid:17)(cid:9)(cid:15)$(cid:9)",!(cid:13)$(cid:21)(cid:17)(cid:6)(cid:13)(cid:15),(cid:19)(cid:21)(cid:16)(cid:9)
+42,27.6767,85.325878,Exist,"Konti, Kumbheshwor",Misa Hiti
+43,27.67786,85.328485,Exist,Sainthu Ebahil,Sainthu Ganesh (Situ) Hiti
+44,27.675013,85.305977,Exist,Dhobighat,Iku Hiti
+45,27.676593,85.306596,Exist,Sano Dhobighat,Hiku Hiti
+46,27.673239,85.312873,Exist,Jawalakhel,Jawalakhel Hiti
+47,,,Lost,Nabahil,Nakabahil Hiti
+48,,,Exist,Gachhe,Ga Hiti
+49,,,Lost,Kopundole,Kopundole Hiti
+50,,,Lost,Pulchowk,Bahil Hiti
+51,,,Lost,Wokubahal,Woku Baha Hiti
+52,,,Lost,Balkumari,Swati Hiti
+53,,,Lost,"Pilachhe, Chaubato",Pilachhe Hiti
+54,27.669972,85.323906,Exist,Tangal,Tangal (Chakba) Hiti
+55,,,Not Found,,Gairi hiti
+58,,,Not Found,,Nay hiti
+59,27.66665,85.326297,Exist,,Nah hiti
+60,27.60833,85.29825,Exist,Pharsidole,Pharsidole Dhungedhara I
+61,27.609472,85.296083,Exist,Pharsidole,Pharsidole Dhungedhara II
+62,27.629694,85.30225,Exist,Macchindrabahal,Ta baha Hiti
+63,27.623333,85.330778,Exist,Dhapakhel,Paheol Hiti
+64,27.626527,85.334444,Exist,Subbagaun,Jalpa Hiti
+65,27.639194,85.339333,Exist,Harisiddhi,Hitko Hiti
+66,27.635388,85.340888,Exist,Opitole,Khichhapukhu Hiti
+67,27.635777,85.340388,Exist,Samal,Pukushi Hiti
+68,27.637583,85.340611,Exist,Harisiddhi,Dhalko Hiti
+69,27.637222,85.343194,Exist,Harisiddhi,Bwangodhya Hiti
+70,27.635861,85.298166,Exist,"Lachhi,Khokana",Naag Hiti/Lachhi hiti
+71,27.664694,85.312111,Exist,Kusunti,Kusunti Mandir Dhungedhara
+72,27.6632446,85.3128573,Exist,Kusunti,Kal dhara
+73,27.6571884,85.3162747,Exist,Tikhidewal,Shova hiti
+74,27.65944444,85.3151111,Exist,Tikhidewal,Pande Hiti
+75,27.64955556,85.3144444,Exist,Tikhidewal,Halleluyah Hiti
+76,27.636457,85.3151184,Exist,"Kuposan hospital, sunkothi",Sunakothi Hiti (Barah Hiti)
+77,27.64452778,85.3140278,Exist,Lohachwok,Lohachwok Hiti
+78,27.6481259,85.3154657,Exist,Nakhipot,Nakhipot hiti
+79,27.67316667,85.2976869,Exist,Afadole,Si Hiti
+80,27.671236,85.3016397,Exist,Bagdol,"Bagdol hiti/ pipalbote
+dhungedhara"
+81,27.6294838,85.3213436,Exist,Sunakothi,Pingadocha hiti
+,!(cid:21)(cid:17)(cid:6)(cid:17)(cid:3)(cid:27)(cid:9),!(cid:13)(cid:15)(cid:29)(cid:6)(cid:17)(cid:3)(cid:27)(cid:9),"""#(cid:6)(cid:7)(cid:17)(cid:9)(cid:15)$(cid:9)",!(cid:13)$(cid:21)(cid:17)(cid:6)(cid:13)(cid:15),(cid:19)(cid:21)(cid:16)(cid:9)
+82,27.66494444,85.3122222,Exist,Kusunti,Kusunti Hiti
+83,27.6619887,85.3059514,Lost,Nakhu pool,Nakhu dhara
+84,27.6679675,85.3095136,Exist,Ekantakuna,Nagadhya Hiti
+85,27.6544907,85.3067422,Exist,Bhaisepati,Sallghari Hiti
+86,27.6585806,85.3061033,Exist,Kywana tole,Kywana/ naag/dawne hiti
+87,27.6463919,85.3095748,Exist,Gagle dhara,Gagle dhara
+88,27.6277149,85.3031118,Exist,"Po tole, Bungamati",Pukhusitha hiti
+89,27.6224829,85.3053303,Exist,Chunikhel,Twatigaa hiti
+90,27.6302663,85.3029349,Exist,"Kota tole, Bungamati",Dey pukhu hiti
+91,27.6286123,85.3024491,Lost,"Lachhi tole next to sata
+falcha, Bungamati",Lachhi hiti
+92,27.6303168,85.302334,Exist,"Kota hiti, Bungamati",Bailli hiti
+93,27.635986,85.2998299,Exist,"Gaabu,khokana",Kalanani hiti
+94,27.6306327,85.3043273,Exist,"Bhunnu tole, Bungamati",Nyawagaa hiti
+95,27.6364596,85.2938041,Lost,"Del taau, tarpa, khokana",Tarpa pukhu hiti
+96,27.6359741,85.2981912,Lost,Lachhi tole,Khokhana dey pukhu hiti
+97,27.6368828,85.2897057,Exist,"Khurkuli, khokana",Kude hiti
+98,27.6295254,85.3020331,Lost,Machhindra bahal,Machhindrabaha hiti
+99,27.6719185,85.3010251,Exist,Pattipa,Pattipa dhara
+100,27.6305987,85.3042805,Exist,"Bhunna tole, Bungamati",Dhola hiti
+101,27.652709,85.309081,Exist,Nakhu dol,Bahun hiti
+102,,,Lost,"Shikali area, Khokana",Pi gaa hiti
+103,,,Lost,"Shikali area, Khokana",Shikali hiti A
+104,,,Lost,"Shikali area, Khokana",Shikali hiti B
+105,,,Not Found,Sunakothi,Wakhat Shungedhara

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./SlidingDialog.css";
 
-function SlidingDialog({ isOpen, onClose }) {
+function SlidingDialog({ isOpen, onClose, data }) {
   const dialogRef = useRef();
 
   const handleClickOutside = (event) => {
@@ -11,6 +11,7 @@ function SlidingDialog({ isOpen, onClose }) {
   };
 
   useEffect(() => {
+    console.log(data, "data");
     if (isOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
@@ -23,7 +24,9 @@ function SlidingDialog({ isOpen, onClose }) {
 
   return (
     <div ref={dialogRef} className={`dialog ${isOpen ? "open" : ""}`}>
-      <h2>Hiti Name</h2>
+      <h2>Hiti Name: {data.name}</h2>
+
+      <h4>Current Status: {data.existence}</h4>
       <p>Hiti Description</p>
       <p>Content Ideas:</p>
       <ul>

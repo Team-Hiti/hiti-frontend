@@ -9,3 +9,23 @@
   border-radius: 0px;
   box-shadow: 0 0px 0px;
 }
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
+}
+
+.leaflet-marker-icon.red {
+  color: red;
+  font-size: 20px;
+}
+
+.leaflet-marker-icon.green {
+  color: rgb(13, 255, 13);
+  text-shadow: 3px 6px rgba(255, 165, 0, 0.75);
+  filter: drop-shadow(0px 0px 1px rgb(142, 226, 163));
+  font-size: 20px;
+}
+
+path.leaflet-interactive:focus {
+  outline: none;
+}

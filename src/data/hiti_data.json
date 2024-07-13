@@ -1,0 +1,828 @@
+[
+  {
+    "id": "1",
+    "latitude": "27.676722",
+    "longitude": "85.316555",
+    "existence": "Exist",
+    "location": "Pulchowk",
+    "name": "Pucha Hiti"
+  },
+  {
+    "id": "2",
+    "latitude": "27.686083",
+    "longitude": "85.306694",
+    "existence": "Exist",
+    "location": "Sanepa",
+    "name": "Sanepa Hiti"
+  },
+  {
+    "id": "3",
+    "latitude": "27.691919",
+    "longitude": "85.305608",
+    "existence": "Exist",
+    "location": "Sanepa",
+    "name": "Raj Tirtha Hiti"
+  },
+  {
+    "id": "4",
+    "latitude": "27.669672",
+    "longitude": "85.328146",
+    "existence": "Exist",
+    "location": "Sundhara",
+    "name": "Nuga Lu Hiti"
+  },
+  {
+    "id": "5",
+    "latitude": "27.670552",
+    "longitude": "85.320798",
+    "existence": "Exist",
+    "location": "Saugal Tole",
+    "name": "Sauga Hiti"
+  },
+  {
+    "id": "6",
+    "latitude": "27.66924",
+    "longitude": "85.326449",
+    "existence": "Exist",
+    "location": "Thapa Tole",
+    "name": "Thapa Hiti"
+  },
+  {
+    "id": "7",
+    "latitude": "27.66754",
+    "longitude": "85.327517",
+    "existence": "Exist",
+    "location": "Kanibahal",
+    "name": "Kanibahal Hiti"
+  },
+  {
+    "id": "8",
+    "latitude": "27.66649",
+    "longitude": "85.326291",
+    "existence": "Exist",
+    "location": "Naricha Tole",
+    "name": "Naricha Hiti"
+  },
+  {
+    "id": "9",
+    "latitude": "27.668401",
+    "longitude": "85.330343",
+    "existence": "Exist",
+    "location": "Tyagal",
+    "name": "Tyaga Hiti"
+  },
+  {
+    "id": "10",
+    "latitude": "27.672988",
+    "longitude": "85.332898",
+    "existence": "Exist",
+    "location": "Balkumari",
+    "name": "Magah Hiti"
+  },
+  {
+    "id": "11",
+    "latitude": "27.672102",
+    "longitude": "85.3357",
+    "existence": "Exist",
+    "location": "Balkumari",
+    "name": "Kwachhen Hiti"
+  },
+  {
+    "id": "12",
+    "latitude": "27.671232",
+    "longitude": "85.332343",
+    "existence": "Exist",
+    "location": "Guita Tole",
+    "name": "Guita hiti"
+  },
+  {
+    "id": "13",
+    "latitude": "27.670816",
+    "longitude": "85.330735",
+    "existence": "Exist",
+    "location": "Subahal",
+    "name": "Subaha Hiti"
+  },
+  {
+    "id": "14",
+    "latitude": "27.681534",
+    "longitude": "85.329165",
+    "existence": "Exist",
+    "location": "Shankhamul",
+    "name": "Shankhamul Hiti A"
+  },
+  {
+    "id": "15",
+    "latitude": "27.679853",
+    "longitude": "85.33053",
+    "existence": "Exist",
+    "location": "Shankhamul",
+    "name": "Shankhamul Hiit B"
+  },
+  {
+    "id": "16",
+    "latitude": "27.678868",
+    "longitude": "85.331219",
+    "existence": "Exist",
+    "location": "Shankhamul",
+    "name": "Shankhamul Hiti C"
+  },
+  {
+    "id": "17",
+    "latitude": "27.678457",
+    "longitude": "85.332861",
+    "existence": "Exist",
+    "location": "Chyasal",
+    "name": "Chyasal Hiti"
+  },
+  {
+    "id": "18",
+    "latitude": "27.67442",
+    "longitude": "85.328147",
+    "existence": "Exist",
+    "location": "Kwoyalachhi",
+    "name": "Narayan (Kwoyalachhi) Hiti"
+  },
+  {
+    "id": "19",
+    "latitude": "27.674655",
+    "longitude": "85.329353",
+    "existence": "Exist",
+    "location": "Chyasal",
+    "name": "Bya Hiti"
+  },
+  {
+    "id": "20",
+    "latitude": "27.673601",
+    "longitude": "85.331894",
+    "existence": "Exist",
+    "location": "Bholdhoka",
+    "name": "Bhola Hiti"
+  },
+  {
+    "id": "21",
+    "latitude": "27.673145",
+    "longitude": "85.332667",
+    "existence": "Exist",
+    "location": "Bholu Tole",
+    "name": "Bhola Khya Hiti"
+  },
+  {
+    "id": "22",
+    "latitude": "27.674622",
+    "longitude": "85.328205",
+    "existence": "Exist",
+    "location": "Chyasal",
+    "name": "Chyasa Hiti"
+  },
+  {
+    "id": "23",
+    "latitude": "27.674205",
+    "longitude": "85.327627",
+    "existence": "Exist",
+    "location": "Bhindhyo Lachhi",
+    "name": "Bhindhyo Lachhi Hiit"
+  },
+  {
+    "id": "24",
+    "latitude": "27.672576",
+    "longitude": "85.325424",
+    "existence": "Exist",
+    "location": "Mangal Bazar",
+    "name": "Bhandar Khal Hiti"
+  },
+  {
+    "id": "25",
+    "latitude": "27.672733",
+    "longitude": "85.32509",
+    "existence": "Exist",
+    "location": "Sundaro Chowk\nMangal bazar",
+    "name": "Tusha Hiti"
+  },
+  {
+    "id": "26",
+    "latitude": "27.673648",
+    "longitude": "85.325423",
+    "existence": "Exist",
+    "location": "Mangal Bazar",
+    "name": "Manga Hiti"
+  },
+  {
+    "id": "27",
+    "latitude": "27.666637",
+    "longitude": "85.323487",
+    "existence": "Exist",
+    "location": "lagankhel",
+    "name": "Lagankhya Hiti"
+  },
+  {
+    "id": "28",
+    "latitude": "27.675973",
+    "longitude": "85.324137",
+    "existence": "Exist",
+    "location": "Nag Bahal",
+    "name": "Elhane (Naga Bahal) Hiti"
+  },
+  {
+    "id": "29",
+    "latitude": "27.665638",
+    "longitude": "85.328536",
+    "existence": "Exist",
+    "location": "Sincha Tole",
+    "name": "Sincha Hiti"
+  },
+  {
+    "id": "30",
+    "latitude": "27.663704",
+    "longitude": "85.328522",
+    "existence": "Exist",
+    "location": "Sincha Tole",
+    "name": "Mani Mandap (Sukuma) Hiti"
+  },
+  {
+    "id": "31",
+    "latitude": "27.67556",
+    "longitude": "85.418938",
+    "existence": "Exist",
+    "location": "Na Tole",
+    "name": "Natwa Hiti"
+  },
+  {
+    "id": "32",
+    "latitude": "27.67649",
+    "longitude": "85.319217",
+    "existence": "Exist",
+    "location": "Chhya Bahal Dhwaka",
+    "name": "Chha Baha (Chhya) Hiti"
+  },
+  {
+    "id": "33",
+    "latitude": "27.677292",
+    "longitude": "85.323945",
+    "existence": "Exist",
+    "location": "Nayea Tole",
+    "name": "Tapa Hiti A"
+  },
+  {
+    "id": "34",
+    "latitude": "27.677267",
+    "longitude": "85.32391",
+    "existence": "Exist",
+    "location": "Tapa Hity Tole",
+    "name": "Tapa Hiti B"
+  },
+  {
+    "id": "35",
+    "latitude": "27.678317",
+    "longitude": "85.325688",
+    "existence": "Exist",
+    "location": "Alko, Ikhachhen",
+    "name": "Alko Hiti"
+  },
+  {
+    "id": "36",
+    "latitude": "27.67853",
+    "longitude": "85.326212",
+    "existence": "Exist",
+    "location": "Emukhel",
+    "name": "Byanchha Hiti"
+  },
+  {
+    "id": "37",
+    "latitude": "27.67853",
+    "longitude": "85.326332",
+    "existence": "Exist",
+    "location": "Emukhel, Koye Khya",
+    "name": "Dathu Hiti"
+  },
+  {
+    "id": "38",
+    "latitude": "27.678328",
+    "longitude": "85.326375",
+    "existence": "Exist",
+    "location": "Po Tole, Emukhel",
+    "name": "Washa Hiti"
+  },
+  {
+    "id": "39",
+    "latitude": "27.67772",
+    "longitude": "85.326073",
+    "existence": "Exist",
+    "location": "Po Tole, Kumbheshwor",
+    "name": "Amrit Hiti (Po Hiti)"
+  },
+  {
+    "id": "40",
+    "latitude": "27.6768",
+    "longitude": "85.325707",
+    "existence": "Exist",
+    "location": "Konti, Kumbheshwor",
+    "name": "Konti Hiti"
+  },
+  {
+    "id": "41",
+    "latitude": "27.676595",
+    "longitude": "85.326132",
+    "existence": "Exist",
+    "location": "Konti, Kumbheshwor",
+    "name": "Konti Pukhu Hiti"
+  },
+  
+  {
+    "id": "42",
+    "latitude": "27.6767",
+    "longitude": "85.325878",
+    "existence": "Exist",
+    "location": "Konti, Kumbheshwor",
+    "name": "Misa Hiti"
+  },
+  {
+    "id": "43",
+    "latitude": "27.67786",
+    "longitude": "85.328485",
+    "existence": "Exist",
+    "location": "Sainthu Ebahil",
+    "name": "Sainthu Ganesh (Situ) Hiti"
+  },
+  {
+    "id": "44",
+    "latitude": "27.675013",
+    "longitude": "85.305977",
+    "existence": "Exist",
+    "location": "Dhobighat",
+    "name": "Iku Hiti"
+  },
+  {
+    "id": "45",
+    "latitude": "27.676593",
+    "longitude": "85.306596",
+    "existence": "Exist",
+    "location": "Sano Dhobighat",
+    "name": "Hiku Hiti"
+  },
+  {
+    "id": "46",
+    "latitude": "27.673239",
+    "longitude": "85.312873",
+    "existence": "Exist",
+    "location": "Jawalakhel",
+    "name": "Jawalakhel Hiti"
+  },
+  {
+    "id": "47",
+    "latitude": "",
+    "longitude": "",
+    "existence": "Lost",
+    "location": "Nabahil",
+    "name": "Nakabahil Hiti"
+  },
+  {
+    "id": "48",
+    "latitude": "",
+    "longitude": "",
+    "existence": "Exist",
+    "location": "Gachhe",
+    "name": "Ga Hiti"
+  },
+  {
+    "id": "49",
+    "latitude": "",
+    "longitude": "",
+    "existence": "Lost",
+    "location": "Kopundole",
+    "name": "Kopundole Hiti"
+  },
+  {
+    "id": "50",
+    "latitude": "",
+    "longitude": "",
+    "existence": "Lost",
+    "location": "Pulchowk",
+    "name": "Bahil Hiti"
+  },
+  {
+    "id": "51",
+    "latitude": "",
+    "longitude": "",
+    "existence": "Lost",
+    "location": "Wokubahal",
+    "name": "Woku Baha Hiti"
+  },
+  {
+    "id": "52",
+    "latitude": "",
+    "longitude": "",
+    "existence": "Lost",
+    "location": "Balkumari",
+    "name": "Swati Hiti"
+  },
+  {
+    "id": "53",
+    "latitude": "",
+    "longitude": "",
+    "existence": "Lost",
+    "location": "Pilachhe, Chaubato",
+    "name": "Pilachhe Hiti"
+  },
+  {
+    "id": "54",
+    "latitude": "27.669972",
+    "longitude": "85.323906",
+    "existence": "Exist",
+    "location": "Tangal",
+    "name": "Tangal (Chakba) Hiti"
+  },
+  {
+    "id": "55",
+    "latitude": "",
+    "longitude": "",
+    "existence": "Not Found",
+    "location": "",
+    "name": "Gairi hiti"
+  },
+  {
+    "id": "58",
+    "latitude": "",
+    "longitude": "",
+    "existence": "Not Found",
+    "location": "",
+    "name": "Nay hiti"
+  },
+  {
+    "id": "59",
+    "latitude": "27.66665",
+    "longitude": "85.326297",
+    "existence": "Exist",
+    "location": "",
+    "name": "Nah hiti"
+  },
+  {
+    "id": "60",
+    "latitude": "27.60833",
+    "longitude": "85.29825",
+    "existence": "Exist",
+    "location": "Pharsidole",
+    "name": "Pharsidole Dhungedhara I"
+  },
+  {
+    "id": "61",
+    "latitude": "27.609472",
+    "longitude": "85.296083",
+    "existence": "Exist",
+    "location": "Pharsidole",
+    "name": "Pharsidole Dhungedhara II"
+  },
+  {
+    "id": "62",
+    "latitude": "27.629694",
+    "longitude": "85.30225",
+    "existence": "Exist",
+    "location": "Macchindrabahal",
+    "name": "Ta baha Hiti"
+  },
+  {
+    "id": "63",
+    "latitude": "27.623333",
+    "longitude": "85.330778",
+    "existence": "Exist",
+    "location": "Dhapakhel",
+    "name": "Paheol Hiti"
+  },
+  {
+    "id": "64",
+    "latitude": "27.626527",
+    "longitude": "85.334444",
+    "existence": "Exist",
+    "location": "Subbagaun",
+    "name": "Jalpa Hiti"
+  },
+  {
+    "id": "65",
+    "latitude": "27.639194",
+    "longitude": "85.339333",
+    "existence": "Exist",
+    "location": "Harisiddhi",
+    "name": "Hitko Hiti"
+  },
+  {
+    "id": "66",
+    "latitude": "27.635388",
+    "longitude": "85.340888",
+    "existence": "Exist",
+    "location": "Opitole",
+    "name": "Khichhapukhu Hiti"
+  },
+  {
+    "id": "67",
+    "latitude": "27.635777",
+    "longitude": "85.340388",
+    "existence": "Exist",
+    "location": "Samal",
+    "name": "Pukushi Hiti"
+  },
+  {
+    "id": "68",
+    "latitude": "27.637583",
+    "longitude": "85.340611",
+    "existence": "Exist",
+    "location": "Harisiddhi",
+    "name": "Dhalko Hiti"
+  },
+  {
+    "id": "69",
+    "latitude": "27.637222",
+    "longitude": "85.343194",
+    "existence": "Exist",
+    "location": "Harisiddhi",
+    "name": "Bwangodhya Hiti"
+  },
+  {
+    "id": "70",
+    "latitude": "27.635861",
+    "longitude": "85.298166",
+    "existence": "Exist",
+    "location": "Lachhi,Khokana",
+    "name": "Naag Hiti/Lachhi hiti"
+  },
+  {
+    "id": "71",
+    "latitude": "27.664694",
+    "longitude": "85.312111",
+    "existence": "Exist",
+    "location": "Kusunti",
+    "name": "Kusunti Mandir Dhungedhara"
+  },
+  {
+    "id": "72",
+    "latitude": "27.6632446",
+    "longitude": "85.3128573",
+    "existence": "Exist",
+    "location": "Kusunti",
+    "name": "Kal dhara"
+  },
+  {
+    "id": "73",
+    "latitude": "27.6571884",
+    "longitude": "85.3162747",
+    "existence": "Exist",
+    "location": "Tikhidewal",
+    "name": "Shova hiti"
+  },
+  {
+    "id": "74",
+    "latitude": "27.65944444",
+    "longitude": "85.3151111",
+    "existence": "Exist",
+    "location": "Tikhidewal",
+    "name": "Pande Hiti"
+  },
+  {
+    "id": "75",
+    "latitude": "27.64955556",
+    "longitude": "85.3144444",
+    "existence": "Exist",
+    "location": "Tikhidewal",
+    "name": "Halleluyah Hiti"
+  },
+  {
+    "id": "76",
+    "latitude": "27.636457",
+    "longitude": "85.3151184",
+    "existence": "Exist",
+    "location": "Kuposan hospital, sunkothi",
+    "name": "Sunakothi Hiti (Barah Hiti)"
+  },
+  {
+    "id": "77",
+    "latitude": "27.64452778",
+    "longitude": "85.3140278",
+    "existence": "Exist",
+    "location": "Lohachwok",
+    "name": "Lohachwok Hiti"
+  },
+  {
+    "id": "78",
+    "latitude": "27.6481259",
+    "longitude": "85.3154657",
+    "existence": "Exist",
+    "location": "Nakhipot",
+    "name": "Nakhipot hiti"
+  },
+  {
+    "id": "79",
+    "latitude": "27.67316667",
+    "longitude": "85.2976869",
+    "existence": "Exist",
+    "location": "Afadole",
+    "name": "Si Hiti"
+  },
+  {
+    "id": "80",
+    "latitude": "27.671236",
+    "longitude": "85.3016397",
+    "existence": "Exist",
+    "location": "Bagdol",
+    "name": "Bagdol hiti/ pipalbote\ndhungedhara"
+  },
+  {
+    "id": "81",
+    "latitude": "27.6294838",
+    "longitude": "85.3213436",
+    "existence": "Exist",
+    "location": "Sunakothi",
+    "name": "Pingadocha hiti"
+  },
+ 
+  {
+    "id": "82",
+    "latitude": "27.66494444",
+    "longitude": "85.3122222",
+    "existence": "Exist",
+    "location": "Kusunti",
+    "name": "Kusunti Hiti"
+  },
+  {
+    "id": "83",
+    "latitude": "27.6619887",
+    "longitude": "85.3059514",
+    "existence": "Lost",
+    "location": "Nakhu pool",
+    "name": "Nakhu dhara"
+  },
+  {
+    "id": "84",
+    "latitude": "27.6679675",
+    "longitude": "85.3095136",
+    "existence": "Exist",
+    "location": "Ekantakuna",
+    "name": "Nagadhya Hiti"
+  },
+  {
+    "id": "85",
+    "latitude": "27.6544907",
+    "longitude": "85.3067422",
+    "existence": "Exist",
+    "location": "Bhaisepati",
+    "name": "Sallghari Hiti"
+  },
+  {
+    "id": "86",
+    "latitude": "27.6585806",
+    "longitude": "85.3061033",
+    "existence": "Exist",
+    "location": "Kywana tole",
+    "name": "Kywana/ naag/dawne hiti"
+  },
+  {
+    "id": "87",
+    "latitude": "27.6463919",
+    "longitude": "85.3095748",
+    "existence": "Exist",
+    "location": "Gagle dhara",
+    "name": "Gagle dhara"
+  },
+  {
+    "id": "88",
+    "latitude": "27.6277149",
+    "longitude": "85.3031118",
+    "existence": "Exist",
+    "location": "Po tole, Bungamati",
+    "name": "Pukhusitha hiti"
+  },
+  {
+    "id": "89",
+    "latitude": "27.6224829",
+    "longitude": "85.3053303",
+    "existence": "Exist",
+    "location": "Chunikhel",
+    "name": "Twatigaa hiti"
+  },
+  {
+    "id": "90",
+    "latitude": "27.6302663",
+    "longitude": "85.3029349",
+    "existence": "Exist",
+    "location": "Kota tole, Bungamati",
+    "name": "Dey pukhu hiti"
+  },
+  {
+    "id": "91",
+    "latitude": "27.6286123",
+    "longitude": "85.3024491",
+    "existence": "Lost",
+    "location": "Lachhi tole next to sata\nfalcha, Bungamati",
+    "name": "Lachhi hiti"
+  },
+  {
+    "id": "92",
+    "latitude": "27.6303168",
+    "longitude": "85.302334",
+    "existence": "Exist",
+    "location": "Kota hiti, Bungamati",
+    "name": "Bailli hiti"
+  },
+  {
+    "id": "93",
+    "latitude": "27.635986",
+    "longitude": "85.2998299",
+    "existence": "Exist",
+    "location": "Gaabu,khokana",
+    "name": "Kalanani hiti"
+  },
+  {
+    "id": "94",
+    "latitude": "27.6306327",
+    "longitude": "85.3043273",
+    "existence": "Exist",
+    "location": "Bhunnu tole, Bungamati",
+    "name": "Nyawagaa hiti"
+  },
+  {
+    "id": "95",
+    "latitude": "27.6364596",
+    "longitude": "85.2938041",
+    "existence": "Lost",
+    "location": "Del taau, tarpa, khokana",
+    "name": "Tarpa pukhu hiti"
+  },
+  {
+    "id": "96",
+    "latitude": "27.6359741",
+    "longitude": "85.2981912",
+    "existence": "Lost",
+    "location": "Lachhi tole",
+    "name": "Khokhana dey pukhu hiti"
+  },
+  {
+    "id": "97",
+    "latitude": "27.6368828",
+    "longitude": "85.2897057",
+    "existence": "Exist",
+    "location": "Khurkuli, khokana",
+    "name": "Kude hiti"
+  },
+  {
+    "id": "98",
+    "latitude": "27.6295254",
+    "longitude": "85.3020331",
+    "existence": "Lost",
+    "location": "Machhindra bahal",
+    "name": "Machhindrabaha hiti"
+  },
+  {
+    "id": "99",
+    "latitude": "27.6719185",
+    "longitude": "85.3010251",
+    "existence": "Exist",
+    "location": "Pattipa",
+    "name": "Pattipa dhara"
+  },
+  {
+    "id": "100",
+    "latitude": "27.6305987",
+    "longitude": "85.3042805",
+    "existence": "Exist",
+    "location": "Bhunna tole, Bungamati",
+    "name": "Dhola hiti"
+  },
+  {
+    "id": "101",
+    "latitude": "27.652709",
+    "longitude": "85.309081",
+    "existence": "Exist",
+    "location": "Nakhu dol",
+    "name": "Bahun hiti"
+  },
+  {
+    "id": "102",
+    "latitude": "",
+    "longitude": "",
+    "existence": "Lost",
+    "location": "Shikali area, Khokana",
+    "name": "Pi gaa hiti"
+  },
+  {
+    "id": "103",
+    "latitude": "",
+    "longitude": "",
+    "existence": "Lost",
+    "location": "Shikali area, Khokana",
+    "name": "Shikali hiti A"
+  },
+  {
+    "id": "104",
+    "latitude": "",
+    "longitude": "",
+    "existence": "Lost",
+    "location": "Shikali area, Khokana",
+    "name": "Shikali hiti B"
+  },
+  {
+    "id": "105",
+    "latitude": "",
+    "longitude": "",
+    "existence": "Not Found",
+    "location": "Sunakothi",
+    "name": "Wakhat Shungedhara"
+  }
+]
