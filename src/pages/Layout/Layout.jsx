@@ -15,7 +15,6 @@ const Layout = () => {
       {/* <NavigationBar /> */}
       <div className="content">
         <Routes>
-          <Route path="" element={<Home />} />
           <Route path="/locations" element={<Map />} />
           <Route path="/data-analysis" element={<DataAnalysis />} />
           <Route path="/about" element={<About />} />
