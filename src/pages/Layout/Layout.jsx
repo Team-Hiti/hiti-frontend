@@ -12,7 +12,7 @@ import ThreeScene from "../ThreeScene/ThreeScene";
 const Layout = () => {
   return (
     <div className="layout">
-      <NavigationBar />
+      {/* <NavigationBar /> */}
       <div className="content">
         <Routes>
           <Route path="" element={<Home />} />

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Canvas, useLoader, extend } from "@react-three/fiber";
+import { Canvas, useLoader, extend, useThree } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Text } from "@react-three/drei";
 import * as THREE from "three";
 import "./ThreeScene.css";
-import { Link } from "react-router-dom";
 
 // Extend the THREE namespace to include PlaneGeometry
 extend({ PlaneGeometry: THREE.PlaneGeometry });
@@ -31,26 +30,27 @@ function Card({ textureSrc, position, rotation }) {
 }
 
 function ThreeScene() {
-  const [objToRender, setObjToRender] = useState("eye"); // Change this to 'eye' or 'dino' as per your model
+  const [objToRender, setObjToRender] = useState("eye");
 
   return (
     <div className="threeScene">
       <Canvas
-        camera={{ position: [14, -2, -22], fov: 100, near: 0.1, far: 1000 }}
+        camera={{ position: [15, 12, 10], fov: 110, near: 0.01, far: 1000 }}
       >
-        {" "}
         <ambientLight intensity={1} />
         <pointLight position={[100, 100, 100]} intensity={1} />
         <pointLight position={[-100, -100, 100]} intensity={1} />
         <pointLight position={[0, 0, 300]} intensity={1} />
+
         <Model
           path={`/models/${objToRender}/scene-v2.gltf`}
           scale={[10, 10, 10]}
           position={[0, 10, 0]}
           rotation={[0, 0, 0]}
         />
+
         <Text
-          position={[20, 40, -80]}
+          position={[14, 45, -80]}
           fontSize={5}
           color="yellow"
           bevelEnabled
@@ -60,37 +60,39 @@ function ThreeScene() {
         >
           S T O R I E S O F P A T A N
         </Text>
+
         <Card
           textureSrc="/js/card1.jpg"
-          position={[-29, 25, -80]}
+          position={[-29, 31, -90]}
           rotation={[-Math.PI / 10, 0, 0]}
         />
         <Card
           textureSrc="/js/card2.jpg"
-          position={[15, 25, -80]}
+          position={[15, 31, -90]}
           rotation={[-Math.PI / 10, 0, 0]}
         />
         <Card
           textureSrc="/js/card3.jpg"
-          position={[59, 25, -80]}
+          position={[59, 31, -90]}
           rotation={[-Math.PI / 10, 0, 0]}
         />
         <Card
           textureSrc="/js/card4.jpg"
-          position={[-94, 27, -80]}
+          position={[-94, 39, -80]}
           rotation={[0, Math.PI / 4, 0]}
         />
         <Card
           textureSrc="/js/card3.jpg"
-          position={[124, 25, -80]}
+          position={[124, 39, -80]}
           rotation={[0, -Math.PI / 4, 0]}
         />
+
         <OrbitControls
-          enablePan={true} // Enable panning
-          enableZoom={true} // Enable zooming
+          enablePan={true}
+          enableZoom={false}
           minPolarAngle={Math.PI / 4}
-          maxPolarAngle={Math.PI / 1.5}
-          target={[0, 0, 0]} // Adjust target to better suit the scene
+          maxPolarAngle={Math.PI / 2}
+          target={[14, 11, -29]}
         />
       </Canvas>
     </div>
