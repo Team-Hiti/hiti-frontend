@@ -12,19 +12,16 @@ import ThreeScene from "../ThreeScene/ThreeScene";
 const Layout = () => {
   return (
     <div className="layout">
-      <BrowserRouter>
-        <NavigationBar />
-        <div className="content">
-          <Routes>
-            <Route path="" element={<Home />} />
-            <Route path="/home" element={<ThreeScene />} />
-            <Route path="/locations" element={<Map />} />
-            <Route path="/data-analysis" element={<DataAnalysis />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/survey" element={<Survey />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
+      <NavigationBar />
+      <div className="content">
+        <Routes>
+          <Route path="" element={<Home />} />
+          <Route path="/locations" element={<Map />} />
+          <Route path="/data-analysis" element={<DataAnalysis />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/survey" element={<Survey />} />
+        </Routes>
+      </div>
     </div>
   );
 };
