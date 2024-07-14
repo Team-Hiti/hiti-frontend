@@ -13,7 +13,7 @@ const Layout = () => {
   return (
     <div className="layout">
       <BrowserRouter>
-        <NavigationBar />
+        {/* <NavigationBar /> */}
         <div className="content">
           <Routes>
             <Route path="" element={<Home />} />

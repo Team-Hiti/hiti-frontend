@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Canvas, useLoader, extend } from "@react-three/fiber";
+import React, { useState, useEffect } from "react";
+import { Canvas, useLoader, extend, useThree } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Text } from "@react-three/drei";
 import * as THREE from "three";
-import "./ThreeScene.css"
+import "./ThreeScene.css";
 
 // Extend the THREE namespace to include PlaneGeometry
 extend({ PlaneGeometry: THREE.PlaneGeometry });
@@ -33,7 +33,7 @@ function ThreeScene() {
   const [objToRender, setObjToRender] = useState("eye"); // Change this to 'eye' or 'dino' as per your model
 
   return (
-    <Canvas camera={{ position: [0, 0, 200], fov: 75 }}>
+    <Canvas camera={{ position: [14, -2, -22], fov: 100, near: 0.1, far: 1000 }}>
       <ambientLight intensity={1} />
       <pointLight position={[100, 100, 100]} intensity={1} />
       <pointLight position={[-100, -100, 100]} intensity={1} />
@@ -42,7 +42,7 @@ function ThreeScene() {
       <Model
         path={`/models/${objToRender}/scene-v2.gltf`}
         scale={[10, 10, 10]}
-        position={[0, 0, 0]}
+        position={[0, 10, 0]}
         rotation={[0, 0, 0]}
       />
 
@@ -50,7 +50,6 @@ function ThreeScene() {
         position={[-29, 40, -80]}
         fontSize={5}
         color="yellow"
-        font=""
         bevelEnabled
         bevelThickness={0.5}
         bevelSize={0.3}
@@ -79,13 +78,18 @@ function ThreeScene() {
         position={[-94, 27, -80]}
         rotation={[0, Math.PI / 4, 0]}
       />
+      <Card
+        textureSrc="/js/card3.jpg"
+        position={[124, 25, -80]}
+        rotation={[0, -Math.PI / 4, 0]}
+      />
 
       <OrbitControls
-        enablePan={true}
-        enableZoom={true}
+        enablePan={true}  // Enable panning
+        enableZoom={true} // Enable zooming
         minPolarAngle={Math.PI / 4}
         maxPolarAngle={Math.PI / 1.5}
-        target={[0, 0, 0]}
+        target={[0, 0, 0]} // Adjust target to better suit the scene
       />
     </Canvas>
   );
