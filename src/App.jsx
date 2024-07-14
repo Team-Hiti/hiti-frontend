@@ -16,8 +16,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ThreeScene />} />
+          <Route path="/locations" element={<Layout />} />
         </Routes>
-        <Layout />
       </BrowserRouter>
     </div>
   );
