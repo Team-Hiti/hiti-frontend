@@ -15,11 +15,12 @@ const Layout = () => {
       {/* <NavigationBar /> */}
       <div className="content">
         <Map />
+
         <Routes>
-          {/* <Route path="/locations" element={<Map />} /> */}
-          {/* <Route path="data-analysis" element={<DataAnalysis />} />
+          <Route exact path="/locations" element={<Map />} />
+          <Route path="data-analysis" element={<DataAnalysis />} />
           <Route path="about" element={<About />} />
-          <Route path="survey" element={<Survey />} /> */}
+          <Route path="survey" element={<Survey />} />
         </Routes>
       </div>
     </div>

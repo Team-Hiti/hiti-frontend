@@ -1,0 +1,20 @@
+/* AudioControl.css */
+.audio-control {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.audio-control button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.audio-control button:hover {
+  color: #ccc;
+}

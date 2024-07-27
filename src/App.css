@@ -1,0 +1,7 @@
+.app {
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  position: relative;
+}
