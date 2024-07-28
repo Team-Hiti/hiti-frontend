@@ -1,0 +1,107 @@
+.lisne-container{
+
+    opacity: 0;
+    z-index: 20;
+  }
+  
+  
+  .overlay {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: dash 4s linear forwards, filling 2s ease-in forwards;
+    font-size: 80px;
+    position: absolute;
+    z-index: 1000;
+  }
+  
+  .overlay text {
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes filling {
+    0%, 90% { fill:#FFED50; fill-opacity: 0; }
+    100% { fill: #FFED50; fill-opacity: 1; }
+  }
+  
+  
+  @keyframes slide-in-anim {
+    0% {
+      opacity: 0;
+      transform: translateX(-200%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+  
+  
+  .image-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      transform: translateX(-100%);
+      opacity: 0;
+    animation: slide-in-anim 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .image-container .cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+  }
+
+
+  .line-container
+  {
+    margin-top: -120px;
+    display: flex;
+  }
+  .content {
+    padding: 0 !important;
+    margin: 0 !important;   
+    top: 130px; /* Adjust as necessary */
+    right: 40px; /* Adjust as necessary */
+    width: 800px; /* Adjust as necessary */
+    height: 600px; /* Adjust as necessary */
+    background-color: #FFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #CCC;
+    border-radius: 18px; /* Optional: to make the corners rounded */
+    
+    }
+
+    .content > h5{
+        
+        display: flex;
+        padding: 0 !important;
+        
+        margin: 0 !important;       
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        align-items: center;
+        font-family: 'poppins';
+        line-height: 40px;
+        font-size: 20px;
+          
+    }

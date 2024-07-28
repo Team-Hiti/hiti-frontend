@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stone Tap Fountain (Dhunge Dhara) with Algae
+* source:	https://sketchfab.com/3d-models/stone-tap-fountain-dhunge-dhara-with-algae-38aa9a9e585d4bcd956897b472165fd0
+* author:	Semantic Creation (https://sketchfab.com/nepalvr360)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stone Tap Fountain (Dhunge Dhara) with Algae" (https://sketchfab.com/3d-models/stone-tap-fountain-dhunge-dhara-with-algae-38aa9a9e585d4bcd956897b472165fd0) by Semantic Creation (https://sketchfab.com/nepalvr360) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,12 @@
+canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.threeScene {
+  background: linear-gradient(
+    to bottom,
+    #020200,
+    #e9a60a
+  ); /* Gradient from light blue to white */
+}

@@ -1,0 +1,158 @@
+.home {
+  background-color: #8cd5f2;
+  height: 100vh;
+  padding: 0;
+  scroll-snap-align: start;
+  
+}
+
+.home .map-content {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 3fr 6fr 5fr;
+  justify-content: flex-end;
+  z-index: 10;
+}
+
+.home .information-section {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'poppins';
+  font-weight: bold;
+}
+
+.home .controls {
+  align-self: flex-end;
+}
+
+.home .image .image-graphics {
+  position: absolute;
+  height: 60px;
+}
+
+.home .image {
+  height: 100vh;
+  position: relative;
+}
+
+.home .image img {
+  height: 100%;
+}
+
+.information-section {
+  height: 100%;
+  width: 100%;
+}
+
+.information-section .information-content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-150%);
+  opacity: 0;
+  
+  animation: slide-in-anim 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+@keyframes slide-in-anim {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}	
+
+.info-circle{
+
+  
+  background-color: rgb(76, 177, 255);
+  height: 100px;
+  width: 100px;
+  padding: 3px;
+  border-radius: 100%;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.info-circle > img{
+height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: fill;
+}
+.home .location {
+  position: absolute;
+  background-color: rgb(76, 177, 255);
+  height: 50px;
+  
+  width: 50px;
+  padding: 3px;
+  border-radius: 100%;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.location-clicked{
+
+  position: absolute;
+  background-color: rgb(76, 177, 255);
+  height: 60px;
+  width: 60px;
+  padding: 3px;
+  border-radius: 100%;
+  transition: 0.3s;
+  z-index: 10;
+  border-bottom-right-radius: 0%;
+
+}
+
+.home .location-clicked img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: fill;
+  
+}
+
+
+.home .location img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: fill;
+  
+}
+
+.home .location:hover {
+  cursor: pointer;
+}
+
+.place > img{
+  height: 20px;
+
+}
+
+
+.place{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;;
+  font-weight: lighter;
+}
+.navigate-story{
+
+  margin-top: 9px !important;
+}
