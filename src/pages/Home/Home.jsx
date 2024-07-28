@@ -10,6 +10,12 @@ import River from "../../assets/river.svg";
 import RainComponent from "../../components/RainComponent/RainComponent";
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
+import Patan from '../../assets/patan.jpg'
+import Pimbahal from '../../assets/pimbahal.jpeg'
+import Nagbahal from '../../assets/nagbahal.jpeg'
+import Place from '../../assets/place.png'
+
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -24,7 +30,7 @@ const Home = () => {
       name: "Two friends",
       x: "30%",
       y: "18%",
-      loc: "src/assets/pimbahal.jpeg",
+      loc: Pimbahal,
       place: "Pimbahal",
       link: "/home"
 
@@ -34,7 +40,7 @@ const Home = () => {
       name: "Spatial Inequality",
       x: "42%",
       y: "18%",
-      loc: "src/assets/nagbahal.jpeg",
+      loc: Nagbahal,
       place: "Nagbahal",
 link: "/home"
       
@@ -45,7 +51,7 @@ link: "/home"
       name: "Honacha",
       x: "46%",
       y: "30%",
-      loc: "src/assets/patan.jpg",
+      loc: Patan,
       place: "Patan Dubar Square",
       link: "/story"
       
@@ -130,7 +136,7 @@ link: "/home"
             
             {currentSite ? currentSite.name : null}
             <div className="place">
-              <img src="src/assets/place.png"></img>
+              <img src={Place}></img>
             {currentSite.place}
             
             </div>
