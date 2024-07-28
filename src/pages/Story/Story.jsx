@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './Story.css';
+import Cover from '../../assets/hiti-b.jpg'
 
 const Story = () => {
     useEffect(() => {
@@ -37,7 +38,7 @@ const Story = () => {
                 <svg height="100" stroke="#FFED50" strokeWidth="2" className="overlay" width="100%">
                     <text x="50%" dominantBaseline="middle" textAnchor="middle" y="50%" color="red">A STORY OF HONACHA</text>
                 </svg>
-                <img className='cover' src="src/assets/hiti-b.jpg" alt="Background Image" />
+                <img className='cover' src={Cover} alt="Background Image" />
                 
                 
             </div>
