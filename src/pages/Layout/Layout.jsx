@@ -14,6 +14,7 @@ import Landscape from "../../components/Landscape/Landscape";
 import AudioControl from "../../components/AudioControl/AudioControl";
 import MainLanding from "../MainLanding/MainLanding";
 import FullScreenVideo from "../../components/FullScreenVideo/FullScreenVideo";
+import SecondaryLanding from "../SecondaryLanding/SecondaryLanding";
 
 const Layout = () => {
   return (
@@ -21,6 +22,7 @@ const Layout = () => {
       <div className="layout">
         <Routes>
           <Route path="/" element={<MainLanding />} />
+          <Route path="/s" element={<SecondaryLanding />} />
           <Route path="/video" element={<FullScreenVideo />} />
           <Route
             path="/test"

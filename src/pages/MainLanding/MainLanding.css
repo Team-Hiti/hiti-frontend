@@ -1,11 +1,10 @@
 .mainLanding .firstLanding {
-  border: 1px solid red;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: #001428;
   color: white;
 }
 

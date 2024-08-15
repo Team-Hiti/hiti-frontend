@@ -3,6 +3,7 @@ import "./MainLanding.css";
 import AudioControl from "../../components/AudioControl/AudioControl";
 import FullScreenVideo from "../../components/FullScreenVideo/FullScreenVideo";
 import Home from "../Home/Home";
+import SecondaryLanding from "../SecondaryLanding/SecondaryLanding";
 
 const MainLanding = () => {
   const [displayVideo, setDisplayVideo] = useState(false);
@@ -13,10 +14,11 @@ const MainLanding = () => {
   const audioRef = useRef(null);
 
   const videoSetup = () => {
-    setDisplayFirstLanding(false);
     setDisplayVideo(true);
+
     setTimeout(() => {
       setDisplaySecondLanding(true);
+      setDisplayFirstLanding(false);
       setDisplayVideo(false);
     }, 9000);
   };
@@ -50,12 +52,12 @@ const MainLanding = () => {
               videoSetup();
             }}
           >
-            Enter Exhibition
+            Enter
           </button>
           <i>Presented by Team Hiti</i>
         </div>
       )}
-      {displaySecondLanding && <Home />}
+      {displaySecondLanding && <SecondaryLanding />}
       {displayVideo ? <FullScreenVideo /> : null}
     </div>
   );
