@@ -35,6 +35,9 @@
 .secondaryLanding .drop:nth-child(3) {
   border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
 }
+.secondaryLanding .drop:nth-child(4) {
+    border-radius: 25% 65% 31% 19% / 37% 59% 31% 43%;
+  }
 
 .secondaryLanding .drop:hover {
   border-radius: 50%;
@@ -149,8 +152,8 @@
 }
 
 .secondaryLanding #circle-4 {
-  right: 90%;
-  top: 120%;
+  right: 95%;
+  top: 50%;
   height: 4rem;
   width: 4rem;
 }
