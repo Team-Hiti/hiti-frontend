@@ -14,33 +14,15 @@ import RainComponent from "./components/RainComponent/RainComponent";
 import CloudAnimation from "./components/CloudAnimation/CloudAnimation";
 import Landscape from "./components/Landscape/Landscape";
 import AudioControl from "./components/AudioControl/AudioControl";
+import SvgLineAnimation from "./components/SvgLineAnimation/SvgLineAnimation";
+import SVGAnimation from "./components/SvgLineAnimation/SvgAnimation";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="app">
-      <BrowserRouter>
-        {/* <NavigationBar /> */}
-        <RainComponent />
-
-        {/* <CloudAnimation /> */}
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <div className="landscape-container">
-                <Landscape />
-                <AudioControl />
-                <Home />
-              </div>
-            }
-          />
-          <Route path="/3d" element={<ThreeScene />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/locations" element={<Map />} />
-        </Routes>
-      </BrowserRouter>
+      <Layout />
     </div>
   );
 }

@@ -5,33 +5,53 @@ import PimbahalImage from "../../assets/pimbahal.jpeg";
 import TempleBack from "../../assets/temple_back.svg";
 import background from "../../assets/background.png";
 import Tree from "../../assets/tree.svg";
-import Park from "../../assets/park.svg";
+import Park from "../../assets/tree.svg";
 import River from "../../assets/river.svg";
 import RainComponent from "../../components/RainComponent/RainComponent";
+import { useNavigate } from "react-router-dom";
+import Patan from "../../assets/patan.png";
+import Pimbahal from "../../assets/patan.png";
+import Nagbahal from "../../assets/patan.png";
+import Place from "../../assets/patan.png";
 
 const Home = () => {
-  const [currentSite, setCurrentSite] = useState(null);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/story");
+  };
+
   const [sites, setSites] = useState([
     {
       id: 0,
-      name: "place x",
+      name: "Two friends",
       x: "30%",
       y: "18%",
+      loc: Pimbahal,
+      place: "Pimbahal",
+      link: "/home",
     },
     {
       id: 1,
-      name: "place y",
-      x: "40%",
-      y: "48%",
+      name: "Spatial Inequality",
+      x: "42%",
+      y: "18%",
+      loc: Nagbahal,
+      place: "Nagbahal",
+      link: "/home",
     },
 
     {
-      id: 1,
-      name: "place y",
-      x: "20%",
-      y: "78%",
+      id: 2,
+      name: "Honacha",
+      x: "46%",
+      y: "30%",
+      loc: Patan,
+      place: "Patan Dubar Square",
+      link: "/story",
     },
   ]);
+  const [currentSite, setCurrentSite] = useState(sites[2]);
 
   const siteGraphics = [
     {
@@ -48,18 +68,11 @@ const Home = () => {
       x: "63%",
       y: "20%",
     },
-    {
-      id: 2,
-      imageUrl: River,
-      name: "River",
-      x: "30%",
-      y: "60%",
-    },
   ];
 
   return (
     <div
-      className="home"
+      className="home fade-in"
       style={{
         backgroundImage: `url(${background})`,
         backgroundSize: "cover",
@@ -72,14 +85,17 @@ const Home = () => {
         <div className="image">
           <img src={MapImage} alt="" />
           {sites.map((site) => {
+            console.log(site);
             return (
               <div
                 key={site.id}
                 onClick={() => setCurrentSite(site)}
-                className="location"
+                className={
+                  site.id == currentSite.id ? "location-clicked" : "location"
+                }
                 style={{ top: site.y, left: site.x }}
               >
-                <img src={PimbahalImage} alt="" />
+                <img src={site.loc} alt="" />
               </div>
             );
           })}
@@ -105,9 +121,23 @@ const Home = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="information-content">
-            <img src={PimbahalImage} alt="" />
+          <div className="information-content" key={Math.random()}>
+            <div className="info-circle">
+              <img src={currentSite ? currentSite.loc : null} alt="" />
+            </div>
+
             {currentSite ? currentSite.name : null}
+            <div className="place">
+              <img src={Place}></img>
+              {currentSite.place}
+            </div>
+            <button
+              className="navigate-story"
+              variant="contained"
+              onClick={handleClick}
+            >
+              DIVE IN
+            </button>
           </div>
         </div>
       </div>

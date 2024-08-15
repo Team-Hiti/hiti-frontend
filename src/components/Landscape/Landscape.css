@@ -69,12 +69,12 @@
 
 .mountain-3 {
   border-radius: 80% 0% 0 0/100% 100% 0 0;
-  right: -16vmin;
+  right: -29vmin;
   width: 100vmin;
   left: auto;
-  height: 45vmin;
+  height: 52vmin;
   color: var(--v3);
-  background: url("../../assets/patan_2.png") no-repeat center center; /* Make sure to use your own cloud image */
+  background: url("../../assets/patan.png") no-repeat center center; /* Make sure to use your own cloud image */
   box-shadow: inset 15px 0 10px -10px var(--s1);
 }
 
@@ -474,7 +474,7 @@
 
 .landscape h1 {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 32%;
   font-size: 4rem;
   color: white;

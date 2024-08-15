@@ -1,0 +1,32 @@
+.mainLanding .firstLanding {
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.mainLanding h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  font-size: 7em;
+  font-family: "Poppins";
+}
+
+.mainLanding button.landingButton {
+  background: none;
+  color: white;
+  font-family: "Playfair Display SC";
+  border: 1px solid white;
+  transition: 0.9s;
+  font-size: 1.3em;
+}
+
+.mainLanding button.landingButton:hover {
+  background-color: white;
+  color: black;
+}

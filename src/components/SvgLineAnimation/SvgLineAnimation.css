@@ -1,0 +1,18 @@
+/* DrawingAnimation.css */
+/* DrawingAnimation.css */
+.draw path {
+  stroke: rgb(9, 186, 217);
+  stroke-width: 10;
+  fill: none;
+}
+
+.svgLineAnimation {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

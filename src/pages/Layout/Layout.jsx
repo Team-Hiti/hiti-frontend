@@ -8,22 +8,37 @@ import DataAnalysis from "../DataAnalysis/DataAnalysis";
 import About from "../About/About";
 import Survey from "../Survey/Survey";
 import ThreeScene from "../ThreeScene/ThreeScene";
+import SvgLineAnimation from "../../components/SvgLineAnimation/SvgLineAnimation";
+import SVGAnimation from "../../components/SvgLineAnimation/SvgAnimation";
+import Landscape from "../../components/Landscape/Landscape";
+import AudioControl from "../../components/AudioControl/AudioControl";
+import MainLanding from "../MainLanding/MainLanding";
+import FullScreenVideo from "../../components/FullScreenVideo/FullScreenVideo";
 
 const Layout = () => {
   return (
-    <div className="layout">
-      {/* <NavigationBar /> */}
-      <div className="content">
-        <Map />
-
+    <BrowserRouter>
+      <div className="layout">
         <Routes>
-          <Route exact path="/locations" element={<Map />} />
-          <Route path="data-analysis" element={<DataAnalysis />} />
-          <Route path="about" element={<About />} />
-          <Route path="survey" element={<Survey />} />
+          <Route path="/" element={<MainLanding />} />
+          <Route path="/video" element={<FullScreenVideo />} />
+          <Route
+            path="/test"
+            element={
+              <div className="landscape-container">
+                <SVGAnimation />
+                <Landscape />
+                <AudioControl />
+                <Home />
+              </div>
+            }
+          />
+          <Route path="/3d" element={<ThreeScene />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/locations" element={<Map />} />
         </Routes>
       </div>
-    </div>
+    </BrowserRouter>
   );
 };
 
