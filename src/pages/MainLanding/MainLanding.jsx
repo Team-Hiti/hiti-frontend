@@ -15,16 +15,21 @@ const MainLanding = () => {
 
   const audioRef = useRef(null);
 
+  useEffect(() => {
+    if (videoLoaded) {
+      togglePlay();
+      setTimeout(() => {
+        setDisplayFirstLanding(false);
+        setDisplaySecondLanding(true);
+      }, 2000);
+      setTimeout(() => {
+        setDisplayVideo(false);
+      }, 10000);
+    }
+  }, [videoLoaded]);
+
   const videoSetup = () => {
-    togglePlay();
     setDisplayVideo(true);
-    setTimeout(() => {
-      setDisplayFirstLanding(false);
-      setDisplaySecondLanding(true);
-    }, 2000);
-    setTimeout(() => {
-      setDisplayVideo(false);
-    }, 10000);
   };
 
   const togglePlay = () => {
@@ -49,9 +54,8 @@ const MainLanding = () => {
       {displayFirstLanding && (
         <div className="firstLanding">
           <h1>Let's Begin...</h1>
-          {displayVideo && !videoLoaded ? (
-            <p>Loading...</p>
-          ) : (
+          {displayVideo && !videoLoaded && <p>Loading...</p>}
+          {!displayVideo && (
             <button className="button landingButton" onClick={videoSetup}>
               Enter
             </button>
