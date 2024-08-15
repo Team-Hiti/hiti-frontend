@@ -5,12 +5,14 @@ import "./App.css";
 import "leaflet/dist/leaflet.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
-
+import About from "./pages/About/About"
 import Layout from "./pages/Layout/Layout";
 import ThreeScene from "./pages/ThreeScene/ThreeScene";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import Home from "./pages/Home/Home";
 import Stories from "./pages/Story/Story";
+import Landing from "./pages/Landing/Landing";
+
 import Map from "./pages/Map/Map";
 import RainComponent from "./components/RainComponent/RainComponent";
 import CloudAnimation from "./components/CloudAnimation/CloudAnimation";
@@ -41,6 +43,10 @@ function App() {
 
           <Route path="/locations" element={<Map />} />
           <Route path="/story" element={<Stories />} />
+
+          <Route path="/about" element={<About />} />
+
+          <Route path="/landing" element={<Landing />} />
           
         </Routes>
       </BrowserRouter>

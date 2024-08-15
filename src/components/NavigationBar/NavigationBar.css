@@ -1,14 +1,20 @@
 .navigation-bar {
   padding: 10px 20px;
-  width: 70%;
+  width: 100%;
   margin: auto;
   position: absolute;
-  left: 20%;
+  
+  background-color: #a4c2e1;
+  z-index: 100000;
+
+  color: white;
+  font-family: 'poppins';
 }
+
 
 .navigation-bar ul.nav-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .navigation-bar nav {
@@ -28,4 +34,7 @@
 
 .nav-list li {
   font-weight: 600;
+}
+.nav-list li:hover {
+  color: #377ab4;
 }

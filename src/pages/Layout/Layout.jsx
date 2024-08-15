@@ -7,6 +7,7 @@ import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import DataAnalysis from "../DataAnalysis/DataAnalysis";
 import About from "../About/About";
 import Survey from "../Survey/Survey";
+import Landing from "../Landing/Landing";
 import ThreeScene from "../ThreeScene/ThreeScene";
 
 const Layout = () => {
@@ -21,6 +22,8 @@ const Layout = () => {
           <Route path="data-analysis" element={<DataAnalysis />} />
           <Route path="about" element={<About />} />
           <Route path="survey" element={<Survey />} />
+          <Route path="landing" element={<Landing />} />
+          
         </Routes>
       </div>
     </div>
