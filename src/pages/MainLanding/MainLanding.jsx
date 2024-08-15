@@ -15,12 +15,13 @@ const MainLanding = () => {
 
   const videoSetup = () => {
     setDisplayVideo(true);
-
     setTimeout(() => {
-      setDisplaySecondLanding(true);
       setDisplayFirstLanding(false);
+      setDisplaySecondLanding(true);
+    }, 2000);
+    setTimeout(() => {
       setDisplayVideo(false);
-    }, 9000);
+    }, 10000);
   };
 
   const togglePlay = () => {
