@@ -11,9 +11,12 @@ const MainLanding = () => {
   const [displayFirstLanding, setDisplayFirstLanding] = useState(true);
   const [displaySecondLanding, setDisplaySecondLanding] = useState(false);
 
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
   const audioRef = useRef(null);
 
   const videoSetup = () => {
+    togglePlay();
     setDisplayVideo(true);
     setTimeout(() => {
       setDisplayFirstLanding(false);
@@ -46,20 +49,23 @@ const MainLanding = () => {
       {displayFirstLanding && (
         <div className="firstLanding">
           <h1>Let's Begin...</h1>
-          <button
-            className="button landingButton"
-            onClick={() => {
-              togglePlay();
-              videoSetup();
-            }}
-          >
-            Enter
-          </button>
+          {displayVideo && !videoLoaded ? (
+            <p>Loading...</p>
+          ) : (
+            <button className="button landingButton" onClick={videoSetup}>
+              Enter
+            </button>
+          )}
           <i>Presented by Team Hiti</i>
         </div>
       )}
       {displaySecondLanding && <SecondaryLanding />}
-      {displayVideo ? <FullScreenVideo /> : null}
+      {displayVideo && (
+        <FullScreenVideo
+          videoLoaded={videoLoaded}
+          setVideoLoaded={setVideoLoaded}
+        />
+      )}
     </div>
   );
 };
