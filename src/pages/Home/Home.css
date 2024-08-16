@@ -163,3 +163,28 @@ height: 100%;
   width: 10px;
   height: 10px;
 }
+
+.title-wrapper {
+  margin: 10rem 3rem;
+}
+
+.title {
+  font-size: 10rem;
+  color: hsla(0, 0%, 100%, 0.08);
+  background-image: radial-gradient(closest-side, #fff 100%, transparent 0);
+  background-repeat: no-repeat;
+  background-clip: text;
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#circle {
+  background: radial-gradient(circle at 50% 50%, transparent 100px, rgba(0, 0, 0, 0.8) 105px);
+  height: 400px; /* Match spotlightSize */
+  width: 400px;
+  position: absolute;
+  pointer-events: none; /* Prevents interference with mouse events */
+}
+
+.invisible{
+  display: none;
+}
