@@ -10,7 +10,7 @@ const MainLanding = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [displayFirstLanding, setDisplayFirstLanding] = useState(true);
   const [displaySecondLanding, setDisplaySecondLanding] = useState(false);
-
+  const [displayMap, setDisplayMap] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   const audioRef = useRef(null);
@@ -63,13 +63,22 @@ const MainLanding = () => {
           <i>Presented by Team Hiti</i>
         </div>
       )}
-      {displaySecondLanding && <SecondaryLanding />}
+      {displaySecondLanding && (
+        <SecondaryLanding
+          onNext={() => {
+            setDisplaySecondLanding(false);
+            setDisplayMap(true);
+          }}
+        />
+      )}
       {displayVideo && (
         <FullScreenVideo
           videoLoaded={videoLoaded}
           setVideoLoaded={setVideoLoaded}
         />
       )}
+
+      {displayMap && <Home />}
     </div>
   );
 };

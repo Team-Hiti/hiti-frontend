@@ -3,8 +3,9 @@ import "./SecondaryLanding.css";
 import RainComponent from "../../components/RainComponent/RainComponent";
 import Raining from "../../components/Raining/Raining";
 import Video from "../../assets/video.mov";
+import { Link } from "react-router-dom";
 
-const SecondaryLanding = () => {
+const SecondaryLanding = ({ onNext }) => {
   const videoRef = useRef(null);
   useEffect(() => {
     if (videoRef.current) {
@@ -32,9 +33,8 @@ const SecondaryLanding = () => {
       </div>
 
       <div className="overlay right">
-        <button>ENTER EXHIBITION</button>
+        <button onClick={onNext}>ENTER EXHIBITION</button>
       </div>
-
     </div>
   );
 };

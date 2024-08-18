@@ -15,6 +15,8 @@ import AudioControl from "../../components/AudioControl/AudioControl";
 import MainLanding from "../MainLanding/MainLanding";
 import FullScreenVideo from "../../components/FullScreenVideo/FullScreenVideo";
 import SecondaryLanding from "../SecondaryLanding/SecondaryLanding";
+import ThreeJSComponent from "../ThreeScene/ThreeJSComponent";
+import LightBulbAnimation from "../../components/LightBulb/LightBulbAnimation";
 
 const Layout = () => {
   return (
@@ -36,8 +38,10 @@ const Layout = () => {
             }
           />
           <Route path="/3d" element={<ThreeScene />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/map" element={<Home />} />
           <Route path="/locations" element={<Map />} />
+          <Route path="/3check" element={<ThreeJSComponent />} />
+          <Route path="/light" element={<LightBulbAnimation />} />
         </Routes>
       </div>
     </BrowserRouter>

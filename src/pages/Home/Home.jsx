@@ -8,17 +8,25 @@ import Tree from "../../assets/tree.svg";
 import Park from "../../assets/tree.svg";
 import River from "../../assets/river.svg";
 import RainComponent from "../../components/RainComponent/RainComponent";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Patan from "../../assets/patan.png";
 import Pimbahal from "../../assets/patan.png";
 import Nagbahal from "../../assets/patan.png";
 import Place from "../../assets/patan.png";
+import ThreeScene from "../ThreeScene/ThreeScene";
+import { IoMdCloseCircle } from "react-icons/io";
+import LightBulbAnimation from "../../components/LightBulb/LightBulbAnimation";
+import NavigationBar from "../../components/NavigationBar/NavigationBar";
+import Switch from "../../components/Switch/Switch";
 
 const Home = () => {
   const navigate = useNavigate();
+  const [displayThree, setDisplayThree] = useState(false);
+  const [displayOverlay, setDisplayOverlay] = useState(false);
 
   const handleClick = () => {
-    navigate("/story");
+    setDisplayThree(true);
+    console.log("displaying three");
   };
 
   const [sites, setSites] = useState([
@@ -51,7 +59,7 @@ const Home = () => {
       link: "/story",
     },
   ]);
-  const [currentSite, setCurrentSite] = useState(sites[2]);
+  const [currentSite, setCurrentSite] = useState(null);
 
   const siteGraphics = [
     {
@@ -80,67 +88,94 @@ const Home = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="map-content">
-        <div className="controls"></div>
-        <div className="image">
-          <img src={MapImage} alt="" />
-          {sites.map((site) => {
-            console.log(site);
-            return (
-              <div
-                key={site.id}
-                onClick={() => setCurrentSite(site)}
-                className={
-                  site.id == currentSite.id ? "location-clicked" : "location"
-                }
-                style={{ top: site.y, left: site.x }}
-              >
-                <img src={site.loc} alt="" />
-              </div>
-            );
-          })}
+      <NavigationBar />
+      {displayThree ? (
+        <ThreeScene />
+      ) : (
+        <div className="map-content">
+          {displayOverlay ? <div className="overlay"></div> : null}
+          <div className="controls"></div>
+          <div className="image">
+            <img src={MapImage} alt="" />
+            {sites.map((site) => {
+              console.log(site);
+              return (
+                <div
+                  key={site.id}
+                  onClick={() => {
+                    setDisplayOverlay(true);
+                    setCurrentSite(site);
+                  }}
+                  className={
+                    currentSite && site.id == currentSite.id
+                      ? "location-clicked"
+                      : "location"
+                  }
+                  style={{ top: site.y, left: site.x }}
+                >
+                  <img src={site.loc} alt="" />
+                </div>
+              );
+            })}
 
-          {siteGraphics.map((site) => {
-            return (
-              <div
-                key={site.id}
-                className="image-graphics"
-                style={{ top: site.y, left: site.x }}
-              >
-                <img src={site.imageUrl} alt="" />
-              </div>
-            );
-          })}
-        </div>
-        <div
-          className="information-section"
-          style={{
-            backgroundImage: `url(${TempleBack})`,
-            backgroundSize: "120%", // or 'contain', depending on your needs
-            backgroundPosition: "center", // center the image
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div className="information-content" key={Math.random()}>
-            <div className="info-circle">
-              <img src={currentSite ? currentSite.loc : null} alt="" />
+            {siteGraphics.map((site) => {
+              return (
+                <div
+                  key={site.id}
+                  className="image-graphics"
+                  style={{ top: site.y, left: site.x }}
+                >
+                  <img src={site.imageUrl} alt="" />
+                </div>
+              );
+            })}
+          </div>
+          <div
+            className="information-section"
+            style={{
+              backgroundImage: `url(${TempleBack})`,
+              backgroundSize: "120%", // or 'contain', depending on your needs
+              backgroundPosition: "center", // center the image
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <div className="information-content" key={Math.random()}>
+              {currentSite ? (
+                <>
+                  {" "}
+                  <div className="info-circle">
+                    <img src={currentSite ? currentSite.loc : null} alt="" />
+                  </div>
+                  {currentSite ? currentSite.name : null}
+                  <div className="place">
+                    <img src={Place}></img>
+                    {currentSite.place}
+                  </div>{" "}
+                  <button
+                    className="navigate-story"
+                    variant="contained"
+                    onClick={handleClick}
+                  >
+                    DIVE IN
+                  </button>
+                  <LightBulbAnimation />
+                  <Switch
+                    isOn={displayOverlay}
+                    handleToggle={() => {
+                      setDisplayOverlay(!displayOverlay);
+                      setCurrentSite(null);
+                    }}
+                  />
+                </>
+              ) : (
+                <b style={{ textAlign: "center" }}>
+                  Please select a story <br></br> from the map
+                </b>
+              )}
             </div>
-
-            {currentSite ? currentSite.name : null}
-            <div className="place">
-              <img src={Place}></img>
-              {currentSite.place}
-            </div>
-            <button
-              className="navigate-story"
-              variant="contained"
-              onClick={handleClick}
-            >
-              DIVE IN
-            </button>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

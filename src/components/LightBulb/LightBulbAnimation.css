@@ -1,0 +1,110 @@
+.light-bulb-container {
+  position: absolute;
+  top: -150px;
+  left: 81%;
+  transform: translateX(-50%);
+  transition: top 1s ease-out;
+}
+
+.light-bulb-container.visible {
+  top: 20px;
+}
+
+.wire {
+  width: 2px;
+  height: 100px;
+  background-color: #333;
+  margin: 0 auto;
+}
+
+.bulb {
+  position: relative;
+  width: 60px;
+  height: 90px;
+  background-color: rgba(255, 255, 200, 0.7);
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(255, 255, 200, 0.5);
+}
+
+.bulb::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.bulb-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px 10px 0 0;
+}
+
+.bulb-middle {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 200, 0.7);
+  border-radius: 50%;
+}
+
+.bulb-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 20px;
+  background-color: rgba(255, 255, 200, 0.7);
+  border-radius: 0 0 20px 20px;
+}
+
+.filament {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ffcc00;
+  border-radius: 50%;
+}
+
+.shine {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: rotate(45deg);
+  border-radius: 50%;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 50px rgba(255, 255, 200, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 70px rgba(255, 255, 200, 0.8);
+  }
+}
+
+.light-bulb-container.visible .bulb {
+  animation: glow 2s infinite;
+}
