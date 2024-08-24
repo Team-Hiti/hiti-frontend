@@ -12,13 +12,15 @@ import NavigationBar from "./components/NavigationBar/NavigationBar";
 import Home from "./pages/Home/Home";
 import Stories from "./pages/Story/Story";
 import Landing from "./pages/Landing/Landing";
+// import Gallery3DScroll from "./pages/GalleryScroll/Gallery3DScroll";
 
 import Map from "./pages/Map/Map";
 import RainComponent from "./components/RainComponent/RainComponent";
 import CloudAnimation from "./components/CloudAnimation/CloudAnimation";
 import Landscape from "./components/Landscape/Landscape";
 import AudioControl from "./components/AudioControl/AudioControl";
-
+import Gallery3DScroll from "./pages/GalleryScroll/Gallery3DScroll";
+import Exhibition from "./pages/Exhibition/Exhibition.jsx";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -47,7 +49,9 @@ function App() {
           <Route path="/about" element={<About />} />
 
           <Route path="/landing" element={<Landing />} />
-          
+          <Route path="/story1" element={<Gallery3DScroll />} />
+          <Route path="/exhibition" element={<Exhibition />} />
+
         </Routes>
       </BrowserRouter>
   );

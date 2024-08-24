@@ -13,14 +13,14 @@ import Patan from "../../assets/patan.png";
 import Pimbahal from "../../assets/patan.png";
 import Nagbahal from "../../assets/patan.png";
 import Place from "../../assets/patan.png";
-import Spotlight from 'react-spotlight';
-
+import Spotlight from 'react-spotlight'
 const Home = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate("/story");
   };
+  let touched=false
 
   const [sites, setSites] = useState([
     {
@@ -41,6 +41,7 @@ const Home = () => {
       place: "Nagbahal",
       link: "/home",
     },
+
     {
       id: 2,
       name: "Honacha",
@@ -51,9 +52,7 @@ const Home = () => {
       link: "/story",
     },
   ]);
-
   const [currentSite, setCurrentSite] = useState(sites[2]);
-  const [isSpotlightVisible, setIsSpotlightVisible] = useState(false); // New state for spotlight visibility
 
   const siteGraphics = [
     {
@@ -71,11 +70,13 @@ const Home = () => {
       y: "20%",
     },
   ];
-
-  const toggleSpotlight = () => {
-    setIsSpotlightVisible(!isSpotlightVisible);
-  };
-
+  let s = 'invisible'
+  function ren(){
+    
+    return <Spotlight x={0} y={0}/>
+  
+  }
+  
   return (
     <div
       className="home fade-in"
@@ -91,15 +92,17 @@ const Home = () => {
         <div className="image">
           <img src={MapImage} alt="" />
           {sites.map((site) => {
+            console.log(site);
             return (
               <div
                 key={site.id}
-                onClick={() => {
-                  setCurrentSite(site);
-                  toggleSpotlight(); // Toggle the spotlight
+                onClick={() => {setCurrentSite(site)
+
+                  
+                  touched=true
                 }}
                 className={
-                  site.id === currentSite.id ? "location-clicked" : "location"
+                  site.id == currentSite.id ? "location-clicked" : "location"
                 }
                 style={{ top: site.y, left: site.x }}
               >
@@ -115,21 +118,18 @@ const Home = () => {
                 className="image-graphics"
                 style={{ top: site.y, left: site.x }}
               >
+
                 <img src={site.imageUrl} alt="" />
               </div>
             );
           })}
-
-          {/* Spotlight component rendered conditionally */}
-          {isSpotlightVisible && <Spotlight x={0} y={0} />}
         </div>
-
         <div
           className="information-section"
           style={{
             backgroundImage: `url(${TempleBack})`,
-            backgroundSize: "120%",
-            backgroundPosition: "center",
+            backgroundSize: "120%", // or 'contain', depending on your needs
+            backgroundPosition: "center", // center the image
             backgroundRepeat: "no-repeat",
           }}
         >
@@ -140,7 +140,7 @@ const Home = () => {
 
             {currentSite ? currentSite.name : null}
             <div className="place">
-              <img src={Place} alt="" />
+              <img src={Place}></img>
               {currentSite.place}
             </div>
             <button
