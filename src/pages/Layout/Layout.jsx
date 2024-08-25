@@ -53,6 +53,7 @@ const Layout = () => {
           <Route path="/honacha" element={<Gallery3DScroll />} />
           <Route path="/communal-water-strategies" element={<Communal />} />
           <Route path="/traditional-water-management" element={<TradWater />} />
+          <Route path="/nagbahal" element={<ThreeJSComponent />} />
         </Routes>
       </div>
     </BrowserRouter>

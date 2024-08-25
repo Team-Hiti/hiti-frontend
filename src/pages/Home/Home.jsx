@@ -79,16 +79,16 @@ const Home = () => {
     //   link: "/story",
     //   imgName: "tuna",
     // },
-    // {
-    //   id: 5,
-    //   name: "Pimbahal + Nagbahal",
-    //   x: "32%",
-    //   y: "60%",
+    {
+      id: 5,
+      name: " Nagbahal",
+      x: "32%",
+      y: "60%",
 
-    //   place: "",
-    //   link: "/story",
-    //   imgName: "fishes",
-    // },
+      place: "",
+      link: "/nagbahal",
+      imgName: "lion-dance",
+    },
     // {
     //   id: 6,
     //   name: "Urban Flooding",
