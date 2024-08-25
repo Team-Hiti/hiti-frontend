@@ -21,6 +21,8 @@ import Landscape from "./components/Landscape/Landscape";
 import AudioControl from "./components/AudioControl/AudioControl";
 import Gallery3DScroll from "./pages/GalleryScroll/Gallery3DScroll";
 import ConStory from "./pages/ConStory/ConStory";
+import TradWater from "./pages/TradWater/TradWater";
+
 // import Exhibition from "./pages/Exhibition/Exhibition.jsx";
 function App() {
   const [count, setCount] = useState(0);
@@ -52,7 +54,8 @@ function App() {
           <Route path="/landing" element={<Landing />} />
           <Route path="/story1" element={<Gallery3DScroll />} />
           <Route path="/constory" element={<ConStory />} />
-
+          <Route path="/tradwater" element={<TradWater />} />
+  
           {/* <Route path="/exhibition" element={<Exhibition />} /> */}
 
         </Routes>

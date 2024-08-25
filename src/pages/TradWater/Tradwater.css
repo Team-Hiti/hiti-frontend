@@ -1,0 +1,76 @@
+/* body{
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block;
+}
+.wt{
+width: 100%;
+    height: auto;
+}
+  .s{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    overflow-y: scroll;
+    height: 100vh;
+
+} */
+
+
+body {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.wt {
+    width: 100%;
+    height: 100vh; /* Make each image cover the full height of the screen */
+    object-fit: cover; /* Ensure the image covers the screen without distortion */
+}
+
+.s {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden; /* Prevent native scroll */
+}
+
+.buttons {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+body {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.wt {
+    width: 100%;
+    height: 100vh; /* Each image takes the full height of the viewport */
+    object-fit: cover;
+}
+
+.s {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden; /* Prevent native scroll */
+}
+
+.scroll-button {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    background: rgb(56, 130, 209);
+    color: white;
+    border-radius: 8px;
+}
