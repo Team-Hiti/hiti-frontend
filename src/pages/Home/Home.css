@@ -99,7 +99,9 @@
   z-index: 10;
 }
 
-.info-circle > img {
+.info-circle > img,
+gif,
+svg {
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -109,13 +111,38 @@
 .home .location {
   position: absolute;
   background-color: rgb(76, 177, 255);
-  height: 50px;
-
-  width: 50px;
+  height: 60px;
+  width: 60px;
   padding: 3px;
   border-radius: 100%;
   transition: 0.3s;
   z-index: 10;
+}
+
+.home .location img,
+.home .location-clicked img {
+  position: absolute;
+  z-index: 10;
+  height: 60px;
+  width: 60px;
+  transition: 0.3s;
+}
+
+.home .location img{
+  background-color: white;
+}
+
+.home .location .mainImg:hover {
+  opacity: 0;
+}
+.home .location .gif {
+  z-index: 0;
+}
+.home .location-clicked .mainImg:hover {
+  opacity: 0;
+}
+.home .location-clicked .gif {
+  z-index: 0;
 }
 
 .location-clicked {
@@ -131,16 +158,12 @@
 }
 
 .home .location-clicked img {
-  height: 100%;
-  width: 100%;
   overflow: hidden;
   border-radius: 50%;
   object-fit: fill;
 }
 
 .home .location img {
-  height: 100%;
-  width: 100%;
   overflow: hidden;
   border-radius: 50%;
   object-fit: fill;

@@ -5,7 +5,7 @@ import PimbahalImage from "../../assets/pimbahal.jpeg";
 import TempleBack from "../../assets/temple_back.svg";
 import background from "../../assets/background.png";
 import Tree from "../../assets/tree.svg";
-import Park from "../../assets/tree.svg";
+import Park from "../../assets/park.svg";
 import River from "../../assets/river.svg";
 import RainComponent from "../../components/RainComponent/RainComponent";
 import { Link, useNavigate } from "react-router-dom";
@@ -18,6 +18,7 @@ import { IoMdCloseCircle } from "react-icons/io";
 import LightBulbAnimation from "../../components/LightBulb/LightBulbAnimation";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import Switch from "../../components/Switch/Switch";
+import PatanMap from "../../assets/PATAN-MAP.png";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -32,21 +33,22 @@ const Home = () => {
   const [sites, setSites] = useState([
     {
       id: 0,
-      name: "Two friends",
+      name: "Traditional Water Management",
       x: "30%",
       y: "18%",
-      loc: Pimbahal,
       place: "Pimbahal",
       link: "/home",
+      imgName: "lion-dance",
     },
     {
       id: 1,
-      name: "Spatial Inequality",
+      name: "Water Contamination",
       x: "42%",
       y: "18%",
       loc: Nagbahal,
       place: "Nagbahal",
       link: "/home",
+      imgName: "contaminated-water",
     },
 
     {
@@ -54,9 +56,67 @@ const Home = () => {
       name: "Honacha",
       x: "46%",
       y: "30%",
-      loc: Patan,
+
       place: "Patan Dubar Square",
       link: "/story",
+      imgName: "fishes",
+    },
+    {
+      id: 3,
+      name: "Communal Water Strategies",
+      x: "56%",
+      y: "60%",
+      place: "Patan Dubar Square",
+      link: "/story",
+      imgName: "society",
+    },
+    {
+      id: 4,
+      name: "School",
+      x: "26%",
+      y: "50%",
+      place: "Patan Dubar Square",
+      link: "/story",
+      imgName: "tuna",
+    },
+    {
+      id: 5,
+      name: "Pimbahal + Nagbahal",
+      x: "32%",
+      y: "60%",
+
+      place: "Patan Dubar Square",
+      link: "/story",
+      imgName: "fishes",
+    },
+    {
+      id: 6,
+      name: "Urban Flooding",
+      x: "26%",
+      y: "35%",
+
+      place: "Patan Dubar Square",
+      link: "/story",
+      imgName: "water-tower",
+    },
+    {
+      id: 7,
+      name: "Water Walk",
+      x: "46%",
+      y: "30%",
+      place: "Patan Dubar Square",
+      link: "/story",
+      imgName: "fishes",
+    },
+    {
+      id: 8,
+      name: "Myth",
+      x: "76%",
+      y: "50%",
+
+      place: "Patan Dubar Square",
+      link: "/story",
+      imgName: "tuna",
     },
   ]);
   const [currentSite, setCurrentSite] = useState(null);
@@ -75,6 +135,20 @@ const Home = () => {
       name: "Park",
       x: "63%",
       y: "20%",
+    },
+    {
+      id: 2,
+      imageUrl: Tree,
+      name: "Tree",
+      x: "16%",
+      y: "81%",
+    },
+    {
+      id: 3,
+      imageUrl: Park,
+      name: "Park",
+      x: "53%",
+      y: "70%",
     },
   ];
 
@@ -113,7 +187,8 @@ const Home = () => {
                   }
                   style={{ top: site.y, left: site.x }}
                 >
-                  <img src={site.loc} alt="" />
+                  <img className="mainImg" src={`${site.imgName}.png`} alt="" />
+                  <img className="gif" src={`${site.imgName}.gif`} alt="" />
                 </div>
               );
             })}
@@ -129,6 +204,12 @@ const Home = () => {
                 </div>
               );
             })}
+            <div
+              className="image-graphics"
+              style={{ top: "65%", left: "60%", height: "350px" }}
+            >
+              <img src={PatanMap} alt="" />
+            </div>
           </div>
           <div
             className="information-section"
@@ -144,7 +225,10 @@ const Home = () => {
                 <>
                   {" "}
                   <div className="info-circle">
-                    <img src={currentSite ? currentSite.loc : null} alt="" />
+                    <img
+                      src={currentSite ? `${currentSite.imgName}.gif` : null}
+                      alt=""
+                    />
                   </div>
                   {currentSite ? currentSite.name : null}
                   <div className="place">

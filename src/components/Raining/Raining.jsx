@@ -10,7 +10,7 @@ const Raining = () => {
     const ctx = c.getContext("2d");
     const w = (c.width = window.innerWidth);
     const h = (c.height = window.innerHeight);
-    const clearColor = "rgba(2, 26, 50, 0.3)";
+    const clearColor = "rgb(28, 107, 160,0.3)";
     const max = 40;
     const drops = [];
 

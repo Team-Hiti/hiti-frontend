@@ -1,11 +1,15 @@
 import React from "react";
-import "./Switch.css";
 
 const Switch = ({ isOn, handleToggle }) => {
   return (
     <div className="switch-container">
       <label className="switch">
-        <input type="checkbox" checked={isOn} onChange={handleToggle} />
+        <input
+          type="button"
+          checked={isOn}
+          onClick={handleToggle}
+          value="Close"
+        />
         <span className="slider round"></span>
       </label>
     </div>

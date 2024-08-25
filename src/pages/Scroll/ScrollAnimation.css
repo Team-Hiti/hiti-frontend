@@ -1,0 +1,36 @@
+.scrollAnimation .divz-item {
+}
+
+.scrollAnimation .divzParagraph {
+  padding: 40px;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.scrollAnimation .divz {
+  background: url("../../assets/patan-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.scrollAnimation .divz-item.selected {
+}
+
+.scrollAnimation .dark-mode {
+}
+
+.scrollAnimation .scrollHeader {
+  position: fixed;
+  z-index: 200;
+  color: white;
+  display: flex;
+  margin: 7vw auto;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

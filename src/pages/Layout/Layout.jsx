@@ -17,6 +17,7 @@ import FullScreenVideo from "../../components/FullScreenVideo/FullScreenVideo";
 import SecondaryLanding from "../SecondaryLanding/SecondaryLanding";
 import ThreeJSComponent from "../ThreeScene/ThreeJSComponent";
 import LightBulbAnimation from "../../components/LightBulb/LightBulbAnimation";
+import ScrollAnimation from "../Scroll/ScrollAnimation";
 
 const Layout = () => {
   return (
@@ -42,6 +43,8 @@ const Layout = () => {
           <Route path="/locations" element={<Map />} />
           <Route path="/3check" element={<ThreeJSComponent />} />
           <Route path="/light" element={<LightBulbAnimation />} />
+          <Route path="/scroll" element={<ScrollAnimation />} />
+          <Route path="/secLand" element={<SecondaryLanding />} />
         </Routes>
       </div>
     </BrowserRouter>
