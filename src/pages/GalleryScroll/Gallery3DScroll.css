@@ -1,3 +1,9 @@
+.gallery3DScroll .divz {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+}
+
 .gallery-container {
   display: flex;
   flex-direction: column;
