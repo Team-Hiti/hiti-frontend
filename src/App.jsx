@@ -20,7 +20,7 @@ import CloudAnimation from "./components/CloudAnimation/CloudAnimation";
 import Landscape from "./components/Landscape/Landscape";
 import AudioControl from "./components/AudioControl/AudioControl";
 import Gallery3DScroll from "./pages/GalleryScroll/Gallery3DScroll";
-import Exhibition from "./pages/Exhibition/Exhibition.jsx";
+// import Exhibition from "./pages/Exhibition/Exhibition.jsx";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -50,7 +50,7 @@ function App() {
 
           <Route path="/landing" element={<Landing />} />
           <Route path="/story1" element={<Gallery3DScroll />} />
-          <Route path="/exhibition" element={<Exhibition />} />
+          {/* <Route path="/exhibition" element={<Exhibition />} /> */}
 
         </Routes>
       </BrowserRouter>
