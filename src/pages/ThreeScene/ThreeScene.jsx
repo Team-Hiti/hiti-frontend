@@ -265,7 +265,7 @@ function ThreeScene() {
           rotation={[0, 0, 0]}
         />
 
-        <Text
+        {/* <Text
           position={[14, 45, -80]}
           fontSize={5}
           color="yellow"
@@ -275,32 +275,27 @@ function ThreeScene() {
           bevelSegments={5}
         >
           S T O R I E S O F P A T A N
-        </Text>
+        </Text> */}
 
         <Card
           textureSrc="/js/card1.jpg"
-          position={[-29, 31, -90]}
-          rotation={[-Math.PI / 10, 0, 0]}
+          position={[-50, 21.5, -90]}
+          rotation={[0, 0, 0]}
         />
         <Card
           textureSrc="/js/card2.jpg"
-          position={[15, 31, -90]}
-          rotation={[-Math.PI / 10, 0, 0]}
+          position={[45, 21.5, -90]}
+          rotation={[0, 0, 0]}
         />
         <Card
           textureSrc="/js/card3.jpg"
-          position={[59, 31, -90]}
-          rotation={[-Math.PI / 10, 0, 0]}
+          position={[-130, 21.5, -90]}
+          rotation={[0, 0, 0]}
         />
         <Card
           textureSrc="/js/card4.jpg"
-          position={[-94, 39, -80]}
-          rotation={[0, Math.PI / 4, 0]}
-        />
-        <Card
-          textureSrc="/js/card3.jpg"
-          position={[0, 35, 100]}
-          rotation={[0, Math.PI, 0]}
+          position={[94, 21.5, -90]}
+          rotation={[0, 0, 0]}
         />
       </Canvas>
     </div>

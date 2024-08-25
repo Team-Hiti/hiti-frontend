@@ -33,11 +33,11 @@ const Home = () => {
   const [sites, setSites] = useState([
     {
       id: 0,
-      name: "Traditional Water Management",
+      name: "Traditional Water  Management",
       x: "30%",
       y: "18%",
       place: "Pimbahal",
-      link: "/home",
+      link: "/traditional-water-management",
       imgName: "lion-dance",
     },
     {
@@ -47,7 +47,7 @@ const Home = () => {
       y: "18%",
       loc: Nagbahal,
       place: "Nagbahal",
-      link: "/home",
+      link: "/water-contamination",
       imgName: "contaminated-water",
     },
 
@@ -57,8 +57,8 @@ const Home = () => {
       x: "46%",
       y: "30%",
 
-      place: "Patan Dubar Square",
-      link: "/story",
+      place: "",
+      link: "/honacha",
       imgName: "fishes",
     },
     {
@@ -66,56 +66,55 @@ const Home = () => {
       name: "Communal Water Strategies",
       x: "56%",
       y: "60%",
-      place: "Patan Dubar Square",
-      link: "/story",
+      place: "",
+      link: "/communal-water-strategies",
       imgName: "society",
     },
-    {
-      id: 4,
-      name: "School",
-      x: "26%",
-      y: "50%",
-      place: "Patan Dubar Square",
-      link: "/story",
-      imgName: "tuna",
-    },
-    {
-      id: 5,
-      name: "Pimbahal + Nagbahal",
-      x: "32%",
-      y: "60%",
+    // {
+    //   id: 4,
+    //   name: "School",
+    //   x: "26%",
+    //   y: "50%",
+    //   place: "",
+    //   link: "/story",
+    //   imgName: "tuna",
+    // },
+    // {
+    //   id: 5,
+    //   name: "Pimbahal + Nagbahal",
+    //   x: "32%",
+    //   y: "60%",
 
-      place: "Patan Dubar Square",
-      link: "/story",
-      imgName: "fishes",
-    },
-    {
-      id: 6,
-      name: "Urban Flooding",
-      x: "26%",
-      y: "35%",
+    //   place: "",
+    //   link: "/story",
+    //   imgName: "fishes",
+    // },
+    // {
+    //   id: 6,
+    //   name: "Urban Flooding",
+    //   x: "26%",
+    //   y: "35%",
 
-      place: "Patan Dubar Square",
-      link: "/story",
-      imgName: "water-tower",
-    },
+    //   place: "",
+    //   link: "/story",
+    //   imgName: "water-tower",
+    // },
     {
       id: 7,
       name: "Water Walk",
-      x: "46%",
-      y: "30%",
-      place: "Patan Dubar Square",
-      link: "/story",
+      x: "26%",
+      y: "40%",
+      place: "",
+      link: "/water-walk-exhibition",
       imgName: "fishes",
     },
     {
       id: 8,
-      name: "Myth",
-      x: "76%",
+      name: "Myth of Pimbahal",
+      x: "36%",
       y: "50%",
-
-      place: "Patan Dubar Square",
-      link: "/story",
+      place: "",
+      link: "/myth-of-pimbahal",
       imgName: "tuna",
     },
   ]);
@@ -235,13 +234,15 @@ const Home = () => {
                     <img src={Place}></img>
                     {currentSite.place}
                   </div>{" "}
-                  <button
-                    className="navigate-story"
-                    variant="contained"
-                    onClick={handleClick}
-                  >
-                    DIVE IN
-                  </button>
+                  <Link to={currentSite.link}>
+                    <button
+                      className="navigate-story"
+                      variant="contained"
+                      onClick={() => {}}
+                    >
+                      DIVE IN
+                    </button>
+                  </Link>
                   <LightBulbAnimation />
                   <Switch
                     isOn={displayOverlay}

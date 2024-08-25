@@ -11,7 +11,7 @@
 }
 
 .scrollAnimation .divz {
-  background: url("../../assets/patan-background.jpg");
+  background: url("/communal/patan.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }

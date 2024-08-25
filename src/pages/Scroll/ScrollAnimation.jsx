@@ -13,10 +13,9 @@ const ScrollAnimation = () => {
           secrets to fulfill. In Lalitpur’s embrace, I quietly reside, A pool of
           old whispers, where mysteries hide.
         </div>
-        <DivzVideoItem
-          videoSource="https://www.w3schools.com/html/mov_bbb.mp4"
-          controls={true}
-        ></DivzVideoItem>
+        <div className="divzParagraph">
+          <img src="/communal/pimbahal.jpg" alt="" />
+        </div>
         <div className="divzParagraph">
           Crafted by demons, in the dark of the night, I hold their turmoil,
           their ancient plight.

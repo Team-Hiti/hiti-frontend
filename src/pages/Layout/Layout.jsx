@@ -18,6 +18,10 @@ import SecondaryLanding from "../SecondaryLanding/SecondaryLanding";
 import ThreeJSComponent from "../ThreeScene/ThreeJSComponent";
 import LightBulbAnimation from "../../components/LightBulb/LightBulbAnimation";
 import ScrollAnimation from "../Scroll/ScrollAnimation";
+import ConStory from "../ConStory/ConStory";
+import Gallery3DScroll from "../GalleryScroll/Gallery3DScroll";
+import Communal from "../Communal/Communal";
+import TradWater from "../TradWater/TradWater";
 
 const Layout = () => {
   return (
@@ -38,13 +42,17 @@ const Layout = () => {
               </div>
             }
           />
-          <Route path="/3d" element={<ThreeScene />} />
+          <Route path="/water-walk-exhibition" element={<ThreeScene />} />
           <Route path="/map" element={<Home />} />
           <Route path="/locations" element={<Map />} />
           <Route path="/3check" element={<ThreeJSComponent />} />
           <Route path="/light" element={<LightBulbAnimation />} />
-          <Route path="/scroll" element={<ScrollAnimation />} />
+          <Route path="/myth-of-pimbahal" element={<ScrollAnimation />} />
           <Route path="/secLand" element={<SecondaryLanding />} />
+          <Route path="/water-contamination" element={<ConStory />} />
+          <Route path="/honacha" element={<Gallery3DScroll />} />
+          <Route path="/communal-water-strategies" element={<Communal />} />
+          <Route path="/traditional-water-management" element={<TradWater />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -1,0 +1,41 @@
+.communal .divz-item {
+}
+
+.communal .divzParagraph {
+  padding: 40px;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.communal .divz {
+  background: url("/communal/bahalDark.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.communal .divz-item.selected {
+}
+
+.communal .dark-mode {
+}
+
+.communal .scrollHeader {
+  position: fixed;
+  z-index: 200;
+  color: white;
+  display: flex;
+  margin: 7vw auto;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.divz-item > * img,
+.divz-item > * video {
+  object-fit: contain !important;
+}

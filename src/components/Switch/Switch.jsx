@@ -5,6 +5,12 @@ const Switch = ({ isOn, handleToggle }) => {
     <div className="switch-container">
       <label className="switch">
         <input
+          style={{
+            background: "none",
+            border: "none",
+            textDecoration: "underline",
+            cursor: "pointer",
+          }}
           type="button"
           checked={isOn}
           onClick={handleToggle}

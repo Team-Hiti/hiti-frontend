@@ -11,9 +11,7 @@ const NavigationBar = () => {
           <img src={Logo} alt="logo" />
         </div>
         <ul className="nav-list">
-          <li className="nav-item">
-            <Link to="/">Home</Link>
-          </li>
+          <li className="nav-item"></li>
           {/* <li className="nav-item">
             <Link to={"/locations"}>Locations</Link>
           </li>
